@@ -63,22 +63,9 @@
         transform: translateY(0);
       }
     }
-    /* 優しく上下に揺れるLINEボタン用アニメーション */
-    @keyframes bounceSlow {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-8px);
-      }
-    }
-    .animate-bounce-slow {
-      animation: bounceSlow 3s ease-in-out infinite;
-    }
   </style>
 </head>
-<body class="selection:bg-lavender selection:text-white overflow-x-hidden pb-20 md:pb-0">
-  </header>
+<body class="selection:bg-lavender selection:text-white overflow-x-hidden pb-24 md:pb-0">
 
   <!-- ファーストビュー -->
   <section class="relative min-h-screen flex items-center pt-32 pb-12 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F5F1EB] to-ivory">
@@ -99,7 +86,7 @@
         <p class="text-base md:text-lg leading-relaxed text-brown/90 max-w-xl font-light">
           ヒアリング × 数秘＆カラー®︎ × 対話を通して、<br />
           あなたの魅力や想い、その人らしい空気感まで<br />引き出すPR撮影
-          
+         
          「 写真が苦手でも安心でした。」<br />
 
 「プロフィール写真を変えたら、反応が変わりました。」<br />
@@ -107,13 +94,13 @@
 「婚活で、会ってみたいと言われました。」<br />
 
 ただ綺麗に撮るだけではなく、<br />“あなたらしさ”が伝わる写真を大切にしています。<br />
-      
+     
 
-          <span class="font-medium"自分らしく輝きたい起業女子や、婚活中の女性へ</span>
+          <span class="font-medium">自分らしく輝きたい起業女子や、婚活中の女性へ</span>
         </p>
 
         <div class="pt-4">
-          <a href="#line" class="inline-block bg-lavender text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:bg-purple transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-lavender/30 tracking-wider">
+          <a href="https://lin.ee/VfXyWjI" target="_blank" rel="noopener noreferrer" class="inline-block bg-lavender text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:bg-purple transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-lavender/30 tracking-wider">
             LINEで相談する
           </a>
         </div>
@@ -595,14 +582,14 @@
 
       <div class="space-y-4 text-base md:text-lg leading-relaxed text-brown/90 font-light">
         <p>未来のお客様や、未来のパートナーに、</p>
-        <p class="font-medium text-brown">「この人、なんだか素敵だな」</p>
+        <p class="font-medium text-brown">「この人、なんだか素敵だな</p>
         <p>そう感じてもらえるような、自然体の魅力を、</p>
         <p>広島の穏やかな光の中で、一緒に見つけていけたら嬉しいです。</p>
       </div>
 
       <!-- アクションボタン -->
-      <div id="line" class="pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="#" class="w-full sm:w-auto min-w-[240px] bg-[#06C755] text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:opacity-90 transition-all duration-300 shadow-md transform hover:-translate-y-0.5 tracking-wider block">
+      <div class="pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://lin.ee/VfXyWjI" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto min-w-[240px] bg-[#06C755] text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:opacity-90 transition-all duration-300 shadow-md transform hover:-translate-y-0.5 tracking-wider block">
           LINEで相談する
         </a>
         <a href="#form-section" class="w-full sm:w-auto min-w-[240px] bg-lavender text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:bg-purple transition-all duration-300 shadow-md transform hover:-translate-y-0.5 tracking-wider block">
@@ -625,16 +612,28 @@
     </div>
   </footer>
 
-  <!-- 画面追従型（フローティング）のLINE相談ボタン -->
-  <div class="fixed bottom-6 right-6 z-50 animate-bounce-slow">
-    <a href="#" class="flex items-center gap-2 bg-[#06C755] hover:bg-[#05b34c] text-white px-5 py-3 md:px-6 md:py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 group">
-      <!-- LINE公式に近いSVGアイコン -->
-      <svg class="w-5 h-5 md:w-6 md:h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.564.39.084.922.258 1.057.592.12.303.079.778.038 1.082l-.162 1.016c-.05.296-.247 1.158 1.066.631 1.312-.528 7.074-4.167 9.657-7.13 1.883-2.144 2.308-4.143 2.308-5.755zm-14.73 2.659c-.004-.325-.264-.585-.59-.585h-1.46v-.884h1.46c.325 0 .586-.261.586-.587 0-.325-.261-.585-.586-.585h-2.046c-.326 0-.586.26-.586.585v3.421c0 .325.26.586.586.586h2.046c.325 0 .586-.261.59-.585l-.004-1.366zm3.324 1.366c0 .325-.26.586-.586.586h-1.391c-.325 0-.586-.261-.586-.586v-3.421c0-.325.26-.585.586-.585.326 0 .586.26.586.585v2.836h1.391c.325 0 .586.261.586.585zm1.536 0c0 .325-.261.586-.586.586-.326 0-.586-.261-.586-.586v-3.421c0-.325.26-.585.586-.585.326 0 .586.26.586.585zm4.848-2.223v-1.198c0-.325-.26-.585-.586-.585-.325 0-.586.26-.586.585v1.198l-1.636-2.22c-.106-.145-.27-.225-.443-.223-.17.001-.334.086-.437.234-.071.102-.109.224-.109.348v3.421c0 .325.261.586.586.586.326 0 .586-.261.586-.586v-1.198l1.635 2.22c.106.145.271.225.443.223.17-.001.335-.086.438-.234.07-.102.109-.224.109-.348l-.001-2.029z"/>
-      </svg>
-      <span class="font-bold text-xs md:text-sm tracking-wider whitespace-nowrap">LINEで相談する</span>
-    </a>
+  <!-- 画面追従型（フローティング）アクションボタンエリア（スマホは下部固定バー、PCは右下浮遊） -->
+  <div class="fixed bottom-0 left-0 right-0 md:bottom-6 md:right-6 md:left-auto z-50 bg-white/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-4 md:p-0 border-t border-beige/20 md:border-t-0 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] md:shadow-none">
+    <div class="max-w-md mx-auto md:max-w-none flex md:flex-col gap-3 justify-center items-center">
+      <!-- LINEで相談するボタン -->
+      <a href="https://lin.ee/VfXyWjI" target="_blank" rel="noopener noreferrer" class="flex-1 md:flex-initial flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05b34c] text-white px-4 py-3.5 md:px-6 md:py-3.5 rounded-full shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03] active:scale-95 group text-center whitespace-nowrap">
+        <!-- LINE公式に近いSVGアイコン -->
+        <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+          <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.564.39.084.922.258 1.057.592.12.303.079.778.038 1.082l-.162 1.016c-.05.296-.247 1.158 1.066.631 1.312-.528 7.074-4.167 9.657-7.13 1.883-2.144 2.308-4.143 2.308-5.755zm-14.73 2.659c-.004-.325-.264-.585-.59-.585h-1.46v-.884h1.46c.325 0 .586-.261.586-.587 0-.325-.261-.585-.586-.585h-2.046c-.326 0-.586.26-.586.585v3.421c0 .325.26.586.586.586h2.046c.325 0 .586-.261.59-.585l-.004-1.366zm3.324 1.366c0 .325-.26.586-.586.586h-1.391c-.325 0-.586-.261-.586-.586v-3.421c0-.325.26-.585.586-.585.326 0 .586.26.586.585v2.836h1.391c.325 0 .586.261.586.585zm1.536 0c0 .325-.261.586-.586.586-.326 0-.586-.261-.586-.586v-3.421c0-.325.26-.585.586-.585.326 0 .586.26.586.585zm4.848-2.223v-1.198c0-.325-.26-.585-.586-.585-.325 0-.586.26-.586.585v1.198l-1.636-2.22c-.106-.145-.27-.225-.443-.223-.17.001-.334.086-.437.234-.071.102-.109.224-.109.348v3.421c0 .325.261.586.586.586.326 0 .586-.261.586-.586v-1.198l1.635 2.22c.106.145.271.225.443.223.17-.001.335-.086.438-.234.07-.102.109-.224.109-.348l-.001-2.029z"/>
+        </svg>
+        <span class="font-bold text-xs md:text-sm tracking-wider">LINEで相談する</span>
+      </a>
+
+      <!-- 撮影を申し込む（ラベンダー） -->
+      <a href="#form-section" class="flex-1 md:flex-initial flex items-center justify-center gap-2 bg-lavender hover:bg-purple text-white px-4 py-3.5 md:px-8 md:py-3.5 rounded-full shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03] active:scale-95 group text-center whitespace-nowrap">
+        <!-- メッセージ・申込用SVGメールアイコン -->
+        <svg class="w-5 h-5 fill-none stroke-current stroke-2 shrink-0" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 19v-8.93a2 2 0 01.89-1.664l8-5.333a2 2 0 012.22 0l8 5.333A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
+        </svg>
+        <span class="font-bold text-xs md:text-sm tracking-wider">撮影を申し込む</span>
+      </a>
+    </div>
   </div>
 
 </body>
-</html>
+
