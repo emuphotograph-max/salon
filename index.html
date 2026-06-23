@@ -11,9 +11,6 @@
 
 <meta name="keywords" content="広島市東区 アロマ,広島市南区 リンパ,広島市安佐南区 アロマ,広島市西区 肩こり,安芸郡府中 むくみ,冷え,更年期,看護師セラピスト">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <style>
 :root{
   --bg:#FAF7F2;
@@ -21,7 +18,6 @@
   --main:#B8A398;
   --accent:#E8DDD0;
   --text:#4B4B4B;
-  --green:#9AA58B;
 }
 
 *{
@@ -61,19 +57,10 @@ section{
   padding:100px 0;
 }
 
-h1,h2,h3{
-  font-weight:500;
-}
-
 h2{
   text-align:center;
   font-size:34px;
-  color:#6f6a65;
   margin-bottom:40px;
-}
-
-p{
-  margin-bottom:14px;
 }
 
 header{
@@ -82,7 +69,6 @@ header{
   top:0;
   z-index:999;
   background:rgba(255,255,255,0.95);
-  backdrop-filter:blur(12px);
   box-shadow:0 2px 12px rgba(0,0,0,0.04);
 }
 
@@ -95,22 +81,13 @@ nav{
 
 .logo{
   font-size:24px;
-  font-weight:bold;
   color:#8a7f77;
+  font-weight:bold;
 }
 
 .menu{
   display:flex;
-  gap:28px;
-}
-
-.menu a{
-  font-size:15px;
-}
-
-.hamburger{
-  display:none;
-  font-size:28px;
+  gap:24px;
 }
 
 .hero{
@@ -122,37 +99,31 @@ nav{
   border-radius:24px;
   overflow:hidden;
   margin-bottom:40px;
-  box-shadow:0 12px 30px rgba(0,0,0,0.06);
 }
 
-.lead{
-  font-size:30px;
-  margin-bottom:30px;
+.card{
+  background:white;
+  padding:40px;
+  border-radius:24px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.04);
 }
 
 .btn{
   display:inline-block;
-  margin-top:25px;
-  padding:16px 34px;
+  padding:16px 32px;
   border-radius:999px;
   background:var(--main);
   color:white;
-}
-
-.card{
-  background:var(--card);
-  padding:40px;
-  border-radius:24px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.04);
+  margin-top:25px;
 }
 
 .fixed-btn{
   position:fixed;
   right:20px;
   bottom:20px;
-  background:var(--main);
+  background:#C7B1A7;
   color:white;
-  padding:15px 22px;
+  padding:16px 22px;
   border-radius:999px;
   z-index:999;
 }
@@ -169,29 +140,21 @@ nav{
 }
 
 @media(max-width:768px){
-
 .menu{
-  display:none;
-}
-
-.hamburger{
-  display:block;
-}
-
-section{
-  padding:70px 0;
+display:none;
 }
 
 h2{
-  font-size:26px;
+font-size:26px;
 }
 
-.lead{
-  font-size:22px;
+section{
+padding:70px 0;
 }
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -203,16 +166,16 @@ h2{
 <a href="#problem">お悩み</a>
 <a href="#menu">メニュー</a>
 <a href="#salon">サロン案内</a>
-<a href="#contact">ご予約</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform" target="_blank">ご予約</a>
 </div>
-
-<div class="hamburger">☰</div>
 </nav>
 </header>
 
-<a href="#contact" class="fixed-btn">ご予約はこちら</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform" target="_blank" class="fixed-btn">
+24時間WEB予約
+</a>
 ```
-```html id="x92lma"
+```html id="q9ax2m"
 <section class="hero fade">
 <div class="container">
 
@@ -220,9 +183,7 @@ h2{
 <img src="https://i.ibb.co/tw3Wdt9B/IMG-2871.jpg" alt="施術風景">
 </div>
 
-
-
-<p class="lead">頑張る女性が整う場所。</p>
+<p style="font-size:28px;margin:20px 0;">頑張る女性が整う場所。</p>
 
 <p>
 元産婦人科看護師による<br>
@@ -237,9 +198,7 @@ h2{
 
 <br>
 
-<p>
-そんな毎日を過ごしていませんか？
-</p>
+<p>そんな毎日を過ごしていませんか？</p>
 
 <p>
 呼吸が深くなり、<br>
@@ -251,8 +210,8 @@ h2{
 小さなリトリート時間です。
 </p>
 
-<a href="#contact" class="btn">
- ご予約・お問い合わせ
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform" target="_blank" class="btn">
+ご予約・お問い合わせ
 </a>
 
 </div>
@@ -272,10 +231,7 @@ h2{
 <p>□ 自分のことを後回しにしている</p>
 
 <br>
-
-<p style="text-align:center;">
-ひとつでも当てはまる方へ。
-</p>
+<p style="text-align:center;">ひとつでも当てはまる方へ。</p>
 </div>
 </div>
 </section>
@@ -297,41 +253,6 @@ h2{
 <p>↓</p>
 <p>なんとなく続く不調</p>
 </div>
-
-<p style="text-align:center;margin-top:30px;">
-私たちの身体は、<br>
-休む力が弱くなると<br>
-不調を感じやすくなります。
-</p>
-</div>
-</section>
-
-<section class="fade">
-<div class="container">
-<h2>
-必要なのは<br>
-もっと頑張ることではなく<br>
-ゆるめる時間
-</h2>
-
-<div class="card" style="text-align:center;">
-<p>温かな手のぬくもり</p>
-<p>香り</p>
-<p>深い呼吸</p>
-<p>静かな空間</p>
-
-<br>
-
-<p>身体がゆるみ</p>
-<p>心がほどける時間。</p>
-
-<br>
-
-<p>
-本来のあなたへ戻るための<br>
-小さなリトリートをお届けします。
-</p>
-</div>
 </div>
 </section>
 
@@ -339,43 +260,15 @@ h2{
 <div class="container">
 <h2>元産婦人科看護師だからできる<br>女性に寄り添うケア</h2>
 
-<div style="
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:24px;
-">
-
 <div class="card">
-<h3>① 女性特有の不調に寄り添える</h3>
-<br>
-<p>
-妊娠・出産・更年期など<br>
-女性の身体の変化を理解しています。
-</p>
-</div>
-
-<div class="card">
-<h3>② 一人ひとりに合わせたケア</h3>
-<br>
-<p>
-その日の状態に合わせて<br>
-香りや施術内容をご提案します。
-</p>
-</div>
-
-<div class="card">
-<h3>③ 完全予約制のプライベート空間</h3>
-<br>
-<p>
-誰にも気を遣わず<br>
-ゆっくり過ごしていただけます。
-</p>
-</div>
-
+<p>① 女性特有の不調に寄り添える</p>
+<p>② 一人ひとりに合わせたケア</p>
+<p>③ 完全予約制のプライベート空間</p>
 </div>
 </div>
 </section>
 
+```html id="u7x9pa"
 <section id="menu" class="fade">
 <div class="container">
 <h2>Menu</h2>
@@ -386,19 +279,15 @@ gap:24px;
 
 <img src="https://i.ibb.co/NnYhhjYc/IMG-2712.jpg" alt="整えるアロマケア" style="margin:20px 0;border-radius:20px;">
 
-<p>
-自律神経と巡りを整える<br>
-ベーシックコース
-</p>
+<p>自律神経と巡りを整えるベーシックコース</p>
 
-<br>
-
-<p>こんな方におすすめ</p>
 <p>・初めての方</p>
 <p>・疲れをリセットしたい方</p>
 <p>・短時間で整えたい方</p>
 
-<a href="#contact" class="btn">予約する</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform" target="_blank" class="btn">
+予約する
+</a>
 </div>
 
 <div class="card">
@@ -407,30 +296,17 @@ gap:24px;
 <h3>深巡ホットストーンアロマケア</h3>
 <p><strong>90分 / 10,000円</strong></p>
 
-<img src="https://i.ibb.co/hRnq4dBV/IMG-2715.jpg" alt="ホットストーンアロマ" style="margin:20px 0;border-radius:20px;">
+<img src="https://i.ibb.co/hRnq4dBV/IMG-2715.jpg" alt="ホットストーン" style="margin:20px 0;border-radius:20px;">
 
-<p>
-温めたホットストーンと<br>
-アロマトリートメントで
-</p>
+<p>深い疲労・冷え・巡りの低下へアプローチ</p>
 
-<p>
-深い疲労・冷え・巡りの低下へ<br>
-アプローチ
-</p>
-
-<p>
-身体の深部からゆるみを促します。
-</p>
-
-<br>
-
-<p>こんな方におすすめ</p>
 <p>・慢性的な疲労</p>
 <p>・冷えやむくみ</p>
 <p>・睡眠の質を整えたい方</p>
 
-<a href="#contact" class="btn">予約する</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform" target="_blank" class="btn">
+予約する
+</a>
 </div>
 </div>
 </section>
@@ -453,20 +329,13 @@ gap:24px;
 
 <p><strong>女性限定</strong></p>
 
-<p>
-広島市東区<br>
-広島第一病院近く
-</p>
-
+<p>広島市東区</p>
+<p>広島第一病院近く</p>
 <p>駐車場あり</p>
-
-<p>※住所詳細はご予約後にご案内いたします</p>
 
 <br>
 
-<p>
-♡セラピスト養成講座も随時募集中♡日程は、要相談
-</p>
+<p>アロマケアセラピスト養成講座も随時募集中</p>
 </div>
 </div>
 </section>
@@ -475,40 +344,14 @@ gap:24px;
 <div class="container" style="text-align:center;">
 <h2>頑張る女性が整う場所。</h2>
 
-<p>
-疲れを抱えたまま<br>
-毎日を過ごすのではなく、
-</p>
+<p>少しだけ立ち止まり、</p>
+<p>自分をいたわる時間を。</p>
 
-<p>
-少しだけ立ち止まり<br>
-自分をいたわる時間を。
-</p>
+<p>あなたのお越しを心よりお待ちしております。</p>
 
-<p>
-あなたのお越しを<br>
-心よりお待ちしております。
-</p>
-
-<a href="#contact" class="btn">
-ご予約・お問い合わせはこちら
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform" target="_blank" class="btn">
+ご予約はこちら
 </a>
-</div>
-</section>
-
-<section id="contact" class="fade">
-<div class="container">
-<h2>お問い合わせ</h2>
-
-<div class="card">
-<iframe
-src="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform?embedded=true"
-width="100%"
-height="1300"
-frameborder="0">
-読み込んでいます…
-</iframe>
-</div>
 </div>
 </section>
 
@@ -528,4 +371,3 @@ fadeEls.forEach(el=>observer.observe(el));
 
 </body>
 </html>
-```
