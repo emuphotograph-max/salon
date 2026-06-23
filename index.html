@@ -1,377 +1,533 @@
-<html lang="ja" class="scroll-smooth">
+```html
+<!DOCTYPE html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>noa photo salon | 大人の女性が静かに休める場所</title>
-<meta name="description" content="女性の人生に寄り添うアロマケア。大人の女性が静かに休める広島のプライベートサロンです。">
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+<title>noa photo salon | 広島市東区の女性専用アロマサロン</title>
+
+<meta name="description" content="広島市東区の女性専用アロマサロン。元産婦人科看護師による自律神経と巡りを整えるアロマケア。肩こり、腰痛、むくみ、冷え、更年期、不眠に寄り添います。">
+
+<meta name="keywords" content="広島市東区 アロマ,広島市南区 リンパ,広島市安佐南区 アロマ,広島市西区 肩こり,安芸郡府中 むくみ,冷え,更年期,看護師セラピスト">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <style>
-    /* 全体の基本設定（文字を大きく、ゆったりとした行間に） */
-    body {
-        font-family: 'Noto Sans JP', sans-serif;
-        color: #5c544d; /* 木の色・ダークブラウン */
-        background-color: #faf8f5; /* 生成り */
-        line-height: 2.2;
-        letter-spacing: 0.08em;
-        font-size: 16px;
-    }
-   
-    /* PC表示時の文字サイズ拡大 */
-    @media (min-width: 768px) {
-        body { font-size: 18px; }
-    }
+:root{
+  --bg:#FAF7F2;
+  --card:#FFFFFF;
+  --main:#B8A398;
+  --accent:#E8DDD0;
+  --text:#4B4B4B;
+  --green:#9AA58B;
+}
 
-    h1, h2, h3 {
-        font-family: 'Shippori Mincho', serif;
-        color: #4a423d; /* 少し濃い木の色 */
-        font-weight: 500;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    /* カラーパレットのクラス化 */
-    .text-body { color: #7a7067; } /* グレージュ系テキスト */
-    .bg-ecru { background-color: #faf8f5; } /* 生成り */
-    .bg-white-card { background-color: #ffffff; } /* 白 */
-    .border-beige { border-color: #e8e3dc; } /* 淡いベージュ */
-    .text-wood { color: #6b5a4d; } /* 木の色 */
-    .text-greige { color: #8c8279; } /* 少しグレージュ */
+html{
+  scroll-behavior:smooth;
+}
 
-    /* 上質なLINEボタンのデザイン */
-    .btn-line {
-        background-color: #ffffff;
-        color: #5c544d;
-        border: 1px solid #e8e3dc;
-        box-shadow: 0 4px 15px rgba(92, 84, 77, 0.05);
-        transition: all 0.3s ease;
-    }
-    .btn-line:hover {
-        box-shadow: 0 6px 20px rgba(92, 84, 77, 0.1);
-        transform: translateY(-2px);
-    }
+body{
+  font-family:"Hiragino Mincho ProN", serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.9;
+}
 
-    /* メニュー用のカードスタイル */
-    .menu-card {
-        background-color: #ffffff;
-        border: 1px solid #e8e3dc;
-        padding: 3.5rem 2rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-    }
+img{
+  width:100%;
+  display:block;
+}
 
-    html { scroll-padding-top: 80px; }
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
-    /* セクション間の上品な区切り線 */
-    .section-divider {
-        width: 1px;
-        height: 50px;
-        background-color: #e8e3dc;
-        margin: 0 auto;
-    }
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
 
-    /* 見出しの両サイドのあしらい */
-    .heading-line {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .heading-line::before, .heading-line::after {
-        content: "";
-        display: block;
-        width: 30px;
-        height: 1px;
-        background-color: #d4cec5;
-    }
+section{
+  padding:100px 0;
+}
 
-    /* 写真の角丸と柔らかな影 */
-    img {
-        border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0,0,0,0.04);
-    }
+h1,h2,h3{
+  font-weight:500;
+}
+
+h2{
+  text-align:center;
+  font-size:34px;
+  color:#6f6a65;
+  margin-bottom:40px;
+}
+
+p{
+  margin-bottom:14px;
+}
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:999;
+  background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(12px);
+  box-shadow:0 2px 12px rgba(0,0,0,0.04);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 5%;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#8a7f77;
+}
+
+.menu{
+  display:flex;
+  gap:28px;
+}
+
+.menu a{
+  font-size:15px;
+}
+
+.hamburger{
+  display:none;
+  font-size:28px;
+}
+
+.hero{
+  padding-top:140px;
+  text-align:center;
+}
+
+.hero-image{
+  border-radius:24px;
+  overflow:hidden;
+  margin-bottom:40px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.06);
+}
+
+.lead{
+  font-size:30px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:16px 34px;
+  border-radius:999px;
+  background:var(--main);
+  color:white;
+}
+
+.card{
+  background:var(--card);
+  padding:40px;
+  border-radius:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.04);
+}
+
+.fixed-btn{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:var(--main);
+  color:white;
+  padding:15px 22px;
+  border-radius:999px;
+  z-index:999;
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(30px);
+  transition:1s;
+}
+
+.fade.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.menu{
+  display:none;
+}
+
+.hamburger{
+  display:block;
+}
+
+section{
+  padding:70px 0;
+}
+
+h2{
+  font-size:26px;
+}
+
+.lead{
+  font-size:22px;
+}
+}
 </style>
 </head>
-<body class="bg-[#faf8f5]">
+<body>
 
-<!-- 固定ナビゲーションバー -->
-<nav class="fixed top-0 left-0 w-full h-16 bg-white/90 backdrop-blur-sm z-[9999] border-b border-beige flex items-center justify-center transition-all">
-    <div class="max-w-3xl w-full px-6 flex justify-between items-center text-[12px] md:text-[13px] font-medium tracking-widest text-wood">
-        <a href="#top" class="hover:text-greige transition">HOME</a>
-        <a href="#about" class="hover:text-greige transition">ABOUT</a>
-        <a href="#menu" class="hover:text-greige transition">MENU</a>
-        <a href="#salon" class="hover:text-greige transition">SALON</a>
-        <a href="#faq" class="hover:text-greige transition">FAQ</a>
-        <a href="#contact" class="hover:text-greige transition text-[#8c8279] border-b border-[#8c8279]">RESERVE</a>
-    </div>
+<header>
+<nav>
+<div class="logo">noa photo salon</div>
+
+<div class="menu">
+<a href="#">HOME</a>
+<a href="#problem">お悩み</a>
+<a href="#menu">メニュー</a>
+<a href="#salon">サロン案内</a>
+<a href="#contact">ご予約</a>
+</div>
+
+<div class="hamburger">☰</div>
 </nav>
-
-<!-- トップ（Hero） -->
-<header id="top" class="pt-36 pb-20 px-6 text-center">
-    <div class="max-w-2xl mx-auto space-y-12">
-        <p class="text-[14px] md:text-[16px] tracking-[0.2em] text-greige font-medium">頑張る女性が整うプライベートサロン</p>
-       
-        <h1 class="text-[22px] md:text-3xl leading-[2] md:leading-[1.9] tracking-[0.1em] md:tracking-widest text-wood">
-            〜自律神経と巡りを整える<br>アロマケア〜
-        </h1>
-       
-        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl shadow-sm">
-            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1200" alt="柔らかい光の施術空間" class="w-full h-full object-cover">
-        </div>
-       
-        <div class="space-y-10 text-body">
-            <p>疲れが抜けない。<br>眠りが浅い。</p>
-            <p>なんとなく不調が続いている</p>
-            <p>そんな毎日が続いていませんか？<br></p>
-        </div>
-       
-        <div class="flex flex-col gap-5 max-w-sm mx-auto pt-8">
-            <a href="#contact" class="btn-line flex items-center justify-center py-5 rounded-full text-[15px] md:text-[16px] tracking-widest font-medium">
-                🤍 メールで相談する
-            </a>
-            <a href="#contact" class="btn-line flex items-center justify-center py-5 rounded-full text-[15px] md:text-[16px] tracking-widest font-medium">
-                🤍 自分を整える時間を予約する
-            </a>
-        </div>
-    </div>
 </header>
 
-<div class="section-divider"></div>
+<a href="#contact" class="fixed-btn">ご予約はこちら</a>
+```
+```html id="x92lma"
+<section class="hero fade">
+<div class="container">
 
-<!-- いつも頑張っているあなたへ -->
-<section id="about" class="py-24 px-6 max-w-2xl mx-auto space-y-12 text-center">
-    <h2 class="text-2xl md:text-3xl heading-line text-wood">『自分のことは、<br>後回しになっていませんか？』</h2>
-   
-    <img src="https://images.unsplash.com/photo-1499914485622-a88fac536970?auto=format&fit=crop&q=80&w=1200" alt="リラックスした女性" class="w-full">
-   
-    <div class="space-y-10 text-body">
-        <p>女性は人生の節目ごとに、<br>身体も心も大きく変化していきます。</p>
-        <p>仕事、結婚、出産、子育て。</p>
-        <p>誰かを大切にする時間が増えるほど、<br>自分の疲れや小さな変化は<br>後回しになりやすいもの。</p>
-        <p class="text-wood pt-4">「疲れていることに慣れてしまった」<br>「休んでもスッキリしない」<br>「自分のための時間がない」</p>
-        <p>そんな方へ。</p>
-    </div>
+<div class="hero-image">
+<img src="images/fv.jpg" alt="施術風景">
+</div>
+
+<h1 style="font-size:42px;color:#8a7f77;">noa photo salon</h1>
+
+<p class="lead">頑張る女性が整う場所。</p>
+
+<p>
+元産婦人科看護師による<br>
+自律神経と巡りを整えるアロマケア
+</p>
+
+<br>
+
+<p>眠れない。</p>
+<p>疲れが抜けない。</p>
+<p>なんとなく不調が続く。</p>
+
+<br>
+
+<p>
+そんな毎日を過ごしていませんか？
+</p>
+
+<p>
+呼吸が深くなり、<br>
+身体の力が抜けていく。
+</p>
+
+<p>
+自分を後回しにしてきた女性のための<br>
+小さなリトリート時間です。
+</p>
+
+<a href="#contact" class="btn">
+ ご予約・お問い合わせ
+</a>
+
+</div>
 </section>
 
-<!-- 必要なのは、もっと頑張ることではなく -->
-<section class="py-24 px-6 bg-white border-y border-beige text-center">
-    <div class="max-w-2xl mx-auto space-y-14">
-        <div class="space-y-6">
-            <p class="text-xl md:text-2xl text-wood">必要なのは、もっと頑張ることではなく</p>
-            <h2 class="text-3xl md:text-4xl text-wood tracking-widest">ゆるめる時間</h2>
-        </div>
-       
-        <img src="https://i.ibb.co/NnYhhjYc/IMG-2712.jpg=crop&q=80&w=1200" alt="アロマオイル" class="w-full">
-       
-        <div class="space-y-10 text-body">
-            <p>日々の緊張やストレスは、<br>気づかないうちに身体に残っていきます。</p>
-            <p>だからこそ、</p>
-            <p>身体全体の巡りと自律神経を整えることが大切です。</p>
-            <p><br>身体がほぐれると、心までもほぐれていき、<br>本来のあなたらしさが、よみがえります。</p>
-        </div>
-    </div>
+<section id="problem" class="fade">
+<div class="container">
+<h2>こんなお悩みありませんか？</h2>
+
+<div class="card">
+<p>□ 朝起きても疲れが残る</p>
+<p>□ 夜中に何度も目が覚める</p>
+<p>□ 首や肩が重い</p>
+<p>□ イライラしやすい</p>
+<p>□ 冷えやむくみが気になる</p>
+<p>□ 更年期世代の不調が気になる</p>
+<p>□ 自分のことを後回しにしている</p>
+
+<br>
+
+<p style="text-align:center;">
+ひとつでも当てはまる方へ。
+</p>
+</div>
+</div>
+</section>
+```
+```html id="3lmn1c"
+<section class="fade">
+<div class="container">
+<h2>不調の原因は<br>頑張りすぎかもしれません。</h2>
+
+<div class="card" style="text-align:center;">
+<p>ストレス</p>
+<p>↓</p>
+<p>緊張状態</p>
+<p>↓</p>
+<p>自律神経の乱れ</p>
+<p>↓</p>
+<p>血流や巡りの低下</p>
+<p>↓</p>
+<p>疲労・睡眠の質の低下</p>
+<p>↓</p>
+<p>なんとなく続く不調</p>
+</div>
+
+<p style="text-align:center;margin-top:30px;">
+私たちの身体は、<br>
+休む力が弱くなると<br>
+不調を感じやすくなります。
+</p>
+</div>
 </section>
 
-<!-- noaが大切にしていること -->
-<section class="py-24 px-6 max-w-2xl mx-auto space-y-12 text-center">
-    <h2 class="text-2xl md:text-3xl heading-line text-wood">noaが大切にしていること</h2>
-   
-    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=1200" alt="施術中の手元" class="w-full">
-   
-    <div class="space-y-10 text-body">
-        <p>今日のお身体や心の状態、<br>お悩みを丁寧にお伺いします。</p>
-        <p>世界最高品質のっ精油の心地よい香りと、<br>手の温もりが伝わる、<br>リンパトリートメント。</p>
-        <p>五感を通して、<br>心と身体がゆるむ時間を大切にしています。</p>
-        <p>心身の緊張を緩め、<br>本来のあなたが持っている巡る力<br>（自然治癒力）を<br>高めていきます。</p>
-    </div>
+<section class="fade">
+<div class="container">
+<h2>
+必要なのは<br>
+もっと頑張ることではなく<br>
+ゆるめる時間
+</h2>
+
+<div class="card" style="text-align:center;">
+<p>温かな手のぬくもり</p>
+<p>香り</p>
+<p>深い呼吸</p>
+<p>静かな空間</p>
+
+<br>
+
+<p>身体がゆるみ</p>
+<p>心がほどける時間。</p>
+
+<br>
+
+<p>
+本来のあなたへ戻るための<br>
+小さなリトリートをお届けします。
+</p>
+</div>
+</div>
 </section>
 
-<div class="section-divider"></div>
+<section class="fade">
+<div class="container">
+<h2>元産婦人科看護師だからできる<br>女性に寄り添うケア</h2>
 
-<!-- 元産婦人科看護師だからこそできる寄り添い -->
-<section class="py-20 px-6 max-w-2xl mx-auto text-center">
-    <div class="bg-white-card p-12 md:p-16 rounded-2xl shadow-sm border border-beige space-y-12">
-        <h2 class="text-2xl md:text-3xl text-wood leading-loose">元産婦人科看護師だからこそ<br>できる寄り添い</h2>
-        <div class="space-y-8 text-body">
-            <p>女性の身体は、<br>同じ人でも毎日違います。</p>
-            <p>不調や不安を抱える女性に寄り添ってきた<br>経験から、</p>
-            <p>安心して力を抜ける場所を<br>つくっています。</p>
-        </div>
-    </div>
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+">
+
+<div class="card">
+<h3>① 女性特有の不調に寄り添える</h3>
+<br>
+<p>
+妊娠・出産・更年期など<br>
+女性の身体の変化を理解しています。
+</p>
+</div>
+
+<div class="card">
+<h3>② 一人ひとりに合わせたケア</h3>
+<br>
+<p>
+その日の状態に合わせて<br>
+香りや施術内容をご提案します。
+</p>
+</div>
+
+<div class="card">
+<h3>③ 完全予約制のプライベート空間</h3>
+<br>
+<p>
+誰にも気を遣わず<br>
+ゆっくり過ごしていただけます。
+</p>
+</div>
+
+</div>
+</div>
+</section>
+```
+```html id="f8v2pm"
+<section id="menu" class="fade">
+<div class="container">
+<h2>Menu</h2>
+
+<div class="card" style="margin-bottom:30px;">
+<h3>整えるアロマケア</h3>
+<p><strong>60分 / 6,000円</strong></p>
+
+<img src="images/menu1.jpg" alt="整えるアロマケア" style="margin:20px 0;border-radius:20px;">
+
+<p>
+自律神経と巡りを整える<br>
+ベーシックコース
+</p>
+
+<br>
+
+<p>こんな方におすすめ</p>
+<p>・初めての方</p>
+<p>・疲れをリセットしたい方</p>
+<p>・短時間で整えたい方</p>
+
+<a href="#contact" class="btn">予約する</a>
+</div>
+
+<div class="card">
+<p style="color:#B8A398;font-weight:bold;">人気 No.1</p>
+
+<h3>深巡ホットストーンアロマケア</h3>
+<p><strong>90分 / 10,000円</strong></p>
+
+<img src="images/menu2.jpg" alt="ホットストーンアロマ" style="margin:20px 0;border-radius:20px;">
+
+<p>
+温めたホットストーンと<br>
+アロマトリートメントで
+</p>
+
+<p>
+深い疲労・冷え・巡りの低下へ<br>
+アプローチ
+</p>
+
+<p>
+身体の深部からゆるみを促します。
+</p>
+
+<br>
+
+<p>こんな方におすすめ</p>
+<p>・慢性的な疲労</p>
+<p>・冷えやむくみ</p>
+<p>・睡眠の質を整えたい方</p>
+
+<a href="#contact" class="btn">予約する</a>
+</div>
+</div>
 </section>
 
-<div class="section-divider"></div>
+<section id="salon" class="fade">
+<div class="container">
+<h2>Salon Information</h2>
 
-<!-- アロマケアメニュー -->
-<section id="menu" class="py-24 px-6 max-w-2xl mx-auto space-y-20">
-    <div class="text-center space-y-14">
-        <h2 class="text-2xl md:text-3xl heading-line text-wood">アロマケアメニュー</h2>
-       
-        <img src="https://i.ibb.co/dwcJ06ND/IMG-2721.jpg=format&fit=crop&q=80&w=1200" alt="施術ベッド" class="w-full">
-       
-        <div class="space-y-8 text-body">
-            <p>doTERRAエッセンシャルオイルを使用。</p>
-            <p>香りと温かさに包まれながら、<br>今のあなたに必要なケアを。</p>
-        </div>
-    </div>
+<div class="card">
+<p><strong>営業日</strong></p>
+<p>月曜日・火曜日</p>
 
-    <div class="menu-card space-y-10 text-center relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#faf8f5] via-[#e8e3dc] to-[#faf8f5]"></div>
-        <h3 class="text-xl md:text-2xl tracking-widest text-wood font-medium">🤍 整えるアロマケア<br><span class="text-[16px] md:text-[18px] text-greige mt-3 block font-normal">（60分）</span></h3>
-        <div class="text-2xl md:text-3xl text-wood font-serif">6,000円</div>
-        <div class="space-y-8 text-body">
-            <p>日々の緊張をゆるめ、<br>心と身体をニュートラルな状態へ<br>戻していくケア。</p>
-            <p class="text-wood">「最近少し疲れている」<br>「身体の力を抜きたい」</p>
-            <p>そんな方へ。</p>
-        </div>
-        <div class="bg-ecru p-8 rounded-xl text-left max-w-sm mx-auto border border-beige/50">
-            <p class="text-[14px] md:text-[15px] text-greige font-medium mb-5 text-center tracking-widest">【内容】</p>
-            <p class="text-body leading-[2.5] text-center">
-                ・背面<br>
-                ・表面<br>
-                ・デコルテ<br>
-                ・腕<br>
-                ・ヘッド
-            </p>
-        </div>
-    </div>
+<br>
 
-    <div class="menu-card space-y-10 text-center relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#faf8f5] via-[#e8e3dc] to-[#faf8f5]"></div>
-        <h3 class="text-xl md:text-2xl tracking-widest text-wood font-medium">🤍 深巡アロマケア<br><span class="text-[16px] md:text-[18px] text-greige mt-3 block font-normal">（90分）</span></h3>
-        <div class="text-2xl md:text-3xl text-wood font-serif">10,000円</div>
-        <div class="space-y-8 text-body">
-            <p>自分のことを後回しにしてきた女性へ。</p>
-            <p>ただ疲れを取るだけではなく、</p>
-            <p>香りとホットストーンの温かさに包まれながら、<br>頑固な冷えや肩こり、疲労感<br>滞った巡りを整えていきます。<br>深い休息へ導くリトリートケア。</p>
-        </div>
-        <div class="bg-ecru p-8 rounded-xl text-left max-w-sm mx-auto border border-beige/50">
-            <p class="text-[14px] md:text-[15px] text-greige font-medium mb-5 text-center tracking-widest">【内容】</p>
-            <p class="text-body leading-[2.5] text-center">
-                ・背面<br>
-                ・表面<br>
-                ・デコルテ<br>
-                ・腕<br>
-                ・ヘッド<br>
-                ・ホットストーン
-               
-            </p>
-        </div>
-    </div>
+<p><strong>完全予約制</strong></p>
+<p>① 11:00</p>
+<p>② 13:00</p>
+
+<br>
+
+<p><strong>女性限定</strong></p>
+
+<p>
+広島市東区<br>
+広島第一病院近く
+</p>
+
+<p>駐車場あり</p>
+
+<p>※住所詳細はご予約後にご案内いたします</p>
+
+<br>
+
+<p>
+アロマケアセラピスト養成講座も随時募集中
+</p>
+</div>
+</div>
 </section>
 
-<!-- ホットストーンについて -->
-<section class="py-24 px-6 bg-white border-y border-beige text-center">
-    <div class="max-w-2xl mx-auto space-y-14">
-        <h2 class="text-2xl md:text-3xl heading-line text-wood">ホットストーンについて</h2>
-       
-       
+<section class="fade">
+<div class="container" style="text-align:center;">
+<h2>頑張る女性が整う場所。</h2>
 
+<p>
+疲れを抱えたまま<br>
+毎日を過ごすのではなく、
+</p>
 
+<p>
+少しだけ立ち止まり<br>
+自分をいたわる時間を。
+</p>
 
-       
-        <div class="space-y-10 text-body">
-            <p>ホットストーンとは、<br>火山岩（玄武岩）を温めた天然石を使用するケアです。</p>
-            <p>身体を温かさで包み込み、<br>香りとともに深いリラックス時間へ。</p>
-        </div>
-    </div>
+<p>
+あなたのお越しを<br>
+心よりお待ちしております。
+</p>
+
+<a href="#contact" class="btn">
+🌿 ご予約・お問い合わせはこちら
+</a>
+</div>
 </section>
 
-<!-- 施術後に感じる変化 -->
-<section class="py-24 px-6 max-w-2xl mx-auto space-y-14 text-center">
-    <h2 class="text-2xl md:text-3xl heading-line text-wood">施術後に感じる変化</h2>
-   
-    <img src="https://i.ibb.co/hRnq4dBV/IMG-2715.jpg"=format&fit=crop&q=80&w=1200" alt="施術後の変化" class="w-full">
-   
-    <div class="space-y-10 text-body bg-white-card p-12 border border-beige rounded-2xl">
-        <p class="leading-[2.8] text-wood">
-            ・呼吸が深くなり、胸のつかえが軽くなる<br>
-・頭の中の考え事が静かになる<br>
-・肩や首の力が自然と抜ける<br>
-・夜ぐっすり眠れたと感じる方も<br>
-・イライラや不安が和らぐ<br>
-・身体だけでなく心も軽くなる<br>
-・「また頑張れそう」と前向きな気持ちになれる<br>
-            
-        </p>
-        <div class="pt-8 border-t border-beige mt-8">
-            <p>忙しい毎日の中で忘れていた、<br>「自分に戻る感覚」を。</p>
-        </div>
-    </div>
+<section id="contact" class="fade">
+<div class="container">
+<h2>お問い合わせ</h2>
+
+<div class="card">
+<iframe
+src="https://docs.google.com/forms/d/e/1FAIpQLSf9rELDW8cUKdX8PJe60GNDaZtHt0ySEQMa680tnnJ55rVC-w/viewform?embedded=true"
+width="100%"
+height="1300"
+frameborder="0">
+読み込んでいます…
+</iframe>
+</div>
+</div>
 </section>
 
-<div class="section-divider"></div>
+<script>
+const fadeEls = document.querySelectorAll('.fade');
 
-<!-- サロンについて -->
-<section id="salon" class="py-24 px-6 max-w-2xl mx-auto space-y-12 text-center">
-    <h2 class="text-2xl md:text-3xl heading-line text-wood">サロンについて</h2>
-   
-    <div class="space-y-6 text-body bg-ecru p-12 rounded-2xl border border-beige/50">
-        <p>広島市東区、広島第一病院近く<br><span class="text-[14px] text-greige">※詳細はご予約後にご案内します。</span></p>
-       
-        <div class="w-12 h-[1px] bg-[#e8e3dc] mx-auto my-6"></div>
-       
-        <p>月曜日・火曜日限定</p>
-        <p>11：00〜 / 13:00〜</p>
-        <p class="pt-4">完全予約制 / 女性限定</p>
-        <p>赤ちゃん見守り施術OK</p>
-    </div>
-   
-    <div class="max-w-sm mx-auto pt-6">
-        <a href="#contact" class="btn-line flex items-center justify-center py-5 rounded-full text-[15px] md:text-[16px] tracking-widest font-medium">
-            🤍 メールで予約する
-        </a>
-    </div>
-</section>
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
 
-<div class="section-divider"></div>
-
-<section id="faq" class="py-24 px-6 max-w-2xl mx-auto space-y-14">
-        <h2 class="text-2xl md:text-3xl text-center heading-line text-wood">よくあるご質問</h2>
-        <div class="space-y-4">
-            <details class="bg-white p-6 border border-beige rounded-2xl shadow-sm"><summary class="font-medium text-wood">Q. 完全予約制ですか？</summary><p class="text-body mt-4 pt-4 border-t border-beige/50">はい。完全予約制となっております。</p></details>
-            <details class="bg-white p-6 border border-beige rounded-2xl shadow-sm"><summary class="font-medium text-wood">Q. 持ち物は必要ですか？</summary><p class="text-body mt-4 pt-4 border-t border-beige/50">特に必要ありません。紙ショーツをご用意しております。</p></details>
-            <details class="bg-white p-6 border border-beige rounded-2xl shadow-sm"><summary class="font-medium text-wood">Q. カード払いはできますか？</summary><p class="text-body mt-4 pt-4 border-t border-beige/50">はい、ご利用いただけます。</p></details>
-            <details class="bg-white p-6 border border-beige rounded-2xl shadow-sm"><summary class="font-medium text-wood">Q. 子どもと一緒でも大丈夫ですか？</summary><p class="text-body mt-4 pt-4 border-t border-beige/50">はい。完全プライベート空間のため、安心してお過ごしいただけます。</p></details>
-        </div>
-    </section>
-<!-- Contact -->
-<section id="contact" class="py-24 px-6 max-w-2xl mx-auto bg-ecru/30">
-    <h2 class="text-2xl md:text-3xl text-center heading-line text-wood mb-12">ご予約・お問い合わせ</h2>
-    <div class="bg-white p-8 border border-beige rounded-2xl shadow-sm">
-        <form action="mailto:noaphotosalon@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
-            <div>
-                <label class="block text-wood font-medium mb-2">お名前</label>
-                <input type="text" name="名前" required class="w-full bg-ecru border border-beige rounded-lg px-4 py-3 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-wood font-medium mb-2">連絡先</label>
-                <input type="text" name="連絡先" required class="w-full bg-ecru border border-beige rounded-lg px-4 py-3 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-wood font-medium mb-2">メニュー</label>
-                <select name="メニュー" class="w-full bg-ecru border border-beige rounded-lg px-4 py-3 focus:outline-none">
-                    <option>整えるアロマケア（60分）</option>
-                    <option>深巡アロマケア（90分）</option>
-                </select>
-            </div>
-            <div>
-                <label class="block text-wood font-medium mb-2">ご希望日時</label>
-                <input type="text" name="日時" class="w-full bg-ecru border border-beige rounded-lg px-4 py-3 focus:outline-none" placeholder="第1希望、第2希望など">
-            </div>
-            <div>
-                <label class="block text-wood font-medium mb-2">お問合せ</label>
-                <textarea name="お問合せ" rows="4" class="w-full bg-ecru border border-beige rounded-lg px-4 py-3 focus:outline-none"></textarea>
-            </div>
-            <button type="submit" class="w-full btn-line py-5 rounded-full font-medium text-wood">送信する</button>
-        </form>
-    </div>
-</section>
-
-<footer class="text-center py-14 text-[12px] text-greige bg-ecru">
-    &copy; noa photo salon
-</footer>
+fadeEls.forEach(el=>observer.observe(el));
+</script>
 
 </body>
 </html>
-   
-    
-   
+```
