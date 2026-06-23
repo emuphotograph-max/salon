@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -7,157 +6,171 @@
 
 <title>noa photo salon | 広島市東区 女性専用アロマサロン</title>
 
-<meta name="description" content="広島市東区の女性専用アロマサロン。元産婦人科看護師による自律神経と巡りを整えるアロマケア。肩こり、腰痛、むくみ、冷え、更年期、不眠に寄り添います。">
+<meta name="description" content="広島市東区・広島市南区・広島市西区・広島市安佐南区・安芸郡府中でアロマ、リンパ、肩こり、腰痛、むくみ、冷え、更年期ケアなら noa photo salon。元産婦人科看護師セラピストによる女性専用サロン。">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#f8f4ef;
-  --white:#ffffff;
-  --main:#b89b8a;
-  --sub:#e8ddd0;
-  --text:#4d4d4d;
+ --bg:#f8f4ef;
+ --white:#ffffff;
+ --main:#b89b8a;
+ --sub:#e8ddd0;
+ --text:#4d4d4d;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+ scroll-behavior:smooth;
 }
 
 body{
-  font-family:"Hiragino Mincho ProN", serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.9;
+ font-family:'Noto Sans JP', sans-serif;
+ background:var(--bg);
+ color:var(--text);
+ line-height:1.9;
+}
+
+h1,h2,h3,.logo{
+ font-family:'Zen Old Mincho', serif;
 }
 
 img{
-  width:100%;
-  display:block;
+ width:100%;
+ display:block;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+ text-decoration:none;
+ color:inherit;
 }
 
 .container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
+ width:90%;
+ max-width:1100px;
+ margin:auto;
 }
 
 section{
-  padding:90px 0;
-}
-
-h1,h2,h3{
-  font-weight:normal;
+ padding:90px 0;
 }
 
 h2{
-  font-size:34px;
-  text-align:center;
-  margin-bottom:40px;
+ font-size:34px;
+ text-align:center;
+ margin-bottom:40px;
 }
 
 header{
-  position:fixed;
-  top:0;
-  width:100%;
-  z-index:999;
-  background:rgba(255,255,255,0.96);
-  box-shadow:0 2px 12px rgba(0,0,0,0.05);
+ position:fixed;
+ top:0;
+ width:100%;
+ z-index:999;
+ background:rgba(255,255,255,0.95);
+ box-shadow:0 2px 12px rgba(0,0,0,0.05);
 }
 
 nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 5%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:18px 5%;
+ position:relative;
 }
 
 .logo{
-  font-size:24px;
-  color:#8f786a;
+ font-size:24px;
+ color:#8f786a;
 }
 
 .menu{
-  display:flex;
-  gap:24px;
+ display:flex;
+ gap:24px;
 }
 
 .card{
-  background:white;
-  border-radius:24px;
-  padding:40px;
-  box-shadow:0 8px 30px rgba(0,0,0,0.04);
+ background:white;
+ border-radius:24px;
+ padding:40px;
+ box-shadow:0 8px 30px rgba(0,0,0,0.04);
 }
 
 .btn{
-  display:inline-block;
-  margin-top:24px;
-  background:var(--main);
-  color:white;
-  padding:16px 32px;
-  border-radius:999px;
+ display:inline-block;
+ margin-top:24px;
+ background:var(--main);
+ color:white;
+ padding:16px 32px;
+ border-radius:999px;
 }
 
 .fixed-btn{
-  position:fixed;
-  right:18px;
-  bottom:20px;
-  background:#b69785;
-  color:white;
-  padding:18px 24px;
-  border-radius:999px;
-  z-index:999;
-  font-size:14px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+ position:fixed;
+ right:18px;
+ bottom:20px;
+ background:#b69785;
+ color:white;
+ padding:18px 24px;
+ border-radius:999px;
+ z-index:999;
+ font-size:14px;
+ box-shadow:0 6px 20px rgba(0,0,0,0.15);
 }
 
-.hero{
-  padding-top:140px;
-  text-align:center;
+.hamburger{
+ display:none;
+ width:30px;
+ cursor:pointer;
 }
 
-.hero-image{
-  overflow:hidden;
-  border-radius:24px;
-  margin-bottom:40px;
+.hamburger span{
+ display:block;
+ height:2px;
+ background:#8f786a;
+ margin:7px 0;
 }
 
 .fade{
-  opacity:0;
-  transform:translateY(30px);
-  transition:1s;
+ opacity:0;
+ transform:translateY(30px);
+ transition:1s;
 }
 
 .fade.show{
-  opacity:1;
-  transform:translateY(0);
+ opacity:1;
+ transform:translateY(0);
 }
 
 @media(max-width:768px){
-  .menu{
-    display:none;
-  }
+ h2{font-size:26px;}
+ section{padding:70px 0;}
+ .card{padding:24px;}
 
-  h2{
-    font-size:26px;
-  }
+ .hamburger{
+  display:block;
+ }
 
-  section{
-    padding:70px 0;
-  }
+ .menu{
+  display:none;
+  position:absolute;
+  top:70px;
+  left:0;
+  width:100%;
+  background:#fff;
+  flex-direction:column;
+  text-align:center;
+  padding:20px 0;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+ }
 
-  .card{
-    padding:24px;
-  }
+ .menu.active{
+  display:flex;
+ }
 }
 </style>
 </head>
@@ -168,10 +181,16 @@ nav{
 <nav>
 <div class="logo">noa photo salon</div>
 
-<div class="menu">
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="menu" id="menu">
 <a href="#">HOME</a>
 <a href="#problem">お悩み</a>
-<a href="#menu">メニュー</a>
+<a href="#menu-section">メニュー</a>
 <a href="#salon">サロン案内</a>
 <a href="https://forms.gle/UDmDebCcW1eyez5J6" target="_blank">ご予約</a>
 </div>
@@ -181,16 +200,15 @@ nav{
 <a href="https://lin.ee/Tj38YB5O" target="_blank" class="fixed-btn">
 LINEで予約する
 </a>
-```
-```html id="zv2q71"
-<section class="hero fade">
+<section class="fade" style="padding-top:140px;">
 <div class="container">
 
-<div class="hero-image">
-<img src="https://i.ibb.co/tw3Wdt9B/IMG-2871.jpg" alt="施術風景">
+<div style="overflow:hidden;border-radius:24px;margin-bottom:40px;">
+<img src="https://i.ibb.co/prw1Gy9S/IMG-2892.jpg" alt="施術風景">
 </div>
 
-
+<div style="text-align:center;">
+<h1 style="font-size:42px;color:#8f786a;">noa photo salon</h1>
 <p style="font-size:28px;margin:20px 0;">頑張る女性が整う場所。</p>
 
 <p>
@@ -219,8 +237,9 @@ LINEで予約する
 </p>
 
 <a href="https://forms.gle/UDmDebCcW1eyez5J6" target="_blank" class="btn">
- ご予約はこちら
+ご予約はこちら
 </a>
+</div>
 
 </div>
 </section>
@@ -263,24 +282,82 @@ LINEで予約する
 
 <section class="fade">
 <div class="container">
-<h2>元看護師だから<br>できる女性に寄り添うケア</h2>
+<h2>選ばれる理由</h2>
 
 <div class="card">
-<p>① 女性特有の不調に寄り添える</p>
+<p><strong>① 女性特有の不調に寄り添える</strong></p>
 <p>妊娠・出産・更年期など女性特有の変化を理解しています。</p>
 <br>
 
-<p>② 一人ひとりに合わせたケア</p>
+<p><strong>② 一人ひとりに合わせたケア</strong></p>
 <p>その日の状態に合わせて香りや施術をご提案します。</p>
 <br>
 
-<p>③ 完全予約制のプライベート空間</p>
-<p>誰にも気を遣わず、ゆっくり過ごしていただけます。</p>
+<p><strong>③ 完全予約制のプライベート空間</strong></p>
+<p>誰にも気を遣わずゆっくり過ごしていただけます。</p>
 </div>
 </div>
 </section>
-```
-<section id="menu" class="fade">
+
+<section class="fade">
+<div class="container">
+<h2>使用するアロマへのこだわり</h2>
+
+<div class="card">
+
+<img src="https://i.ibb.co/ycDZLfDw/IMG-2893.jpg" alt="アロマ" style="margin-bottom:30px;border-radius:20px;">
+
+<p>
+直接肌に触れるものだから、<br>
+本当に安心できるものだけを。
+</p>
+
+<br>
+
+<p>
+noa photo salonでは、<br>
+<strong>doTERRA®</strong> のオイルのみを使用しています。
+</p>
+
+<br>
+
+<p>
+息子が赤ちゃんの頃から16年以上、<br>
+家族のセルフケアとして愛用してきました。
+</p>
+
+<p>
+植物の力で、心と身体をやさしくサポート。
+</p>
+
+<br>
+
+<p><strong>【ピュア】</strong></p>
+<p>
+純度100%の贅沢な香り。<br>
+植物そのままの香りが深く癒やします。
+</p>
+
+<br>
+
+<p><strong>【あんしん】</strong></p>
+<p>
+厳しい検査をクリアした高品質オイル。<br>
+高い安全性を誇ります。
+</p>
+
+<br>
+
+<p>
+本物の優しさに包まれる、<br>
+特別なサロンタイムをお届けします。
+</p>
+
+</div>
+</div>
+</section>
+
+<section id="menu-section" class="fade">
 <div class="container">
 <h2>Menu</h2>
 
@@ -288,7 +365,7 @@ LINEで予約する
 <h3>♡ 整えるアロマケア</h3>
 <p><strong>60分 / 6,000円</strong></p>
 
-<img src="https://i.ibb.co/NnYhhjYc/IMG-2712.jpg" alt="整えるアロマケア" style="margin:20px 0;border-radius:20px;">
+<img src="https://i.ibb.co/bM8KBmWK/IMG-2890.jpg" alt="整えるアロマケア" style="margin:20px 0;border-radius:20px;">
 
 <p>
 日々の緊張をゆるめ、心と身体を
@@ -317,14 +394,16 @@ LINEで予約する
 <h3>♡ 深巡アロマケア</h3>
 <p><strong>90分 / 10,000円</strong></p>
 
-<img src="https://i.ibb.co/hRnq4dBV/IMG-2715.jpg" alt="深巡アロマケア" style="margin:20px 0;border-radius:20px;">
+<img src="<a href="https://ibb.co/PGGBMkdW"><img src="https://i.ibb.co/B228Gk96/IMG-2894.jpg" alt="IMG-2894" border="0"></a>
+<a href="https://ibb.co/hJk4p7kP"><img src="https://i.ibb.co/ycDZLfDw/IMG-2893.jpg" alt="IMG-2893" border="0"></a>
+<a href="https://ibb.co/dJMf1gzR"><img src="https://i.ibb.co/prw1Gy9S/IMG-2892.jpg" alt="IMG-2892" border="0"></a>
+<a href="https://ibb.co/ksWS8BHS"><img src="https://i.ibb.co/bM8KBmWK/IMG-2890.jpg" alt="IMG-2890" border="0"></a><br /><a target='_blank' href='https://ja.imgbb.com/'>おすすめ 画像 アップロード サイト</a><br />" alt="深巡アロマケア" style="margin:20px 0;border-radius:20px;">
 
 <p>
 自分のことを後回しにしてきた女性へ。
 </p>
 
 <p>
-ただ疲れを取るだけではなく、<br>
 香りとホットストーンの温かさに包まれながら、<br>
 体も心も緊張をゆるめ、<br>
 深い休息へ導くリトリートケア。
@@ -358,14 +437,16 @@ LINEで予約する
 <p>② 13:00</p>
 <br>
 
-<p><strong>女性限定</strong></p>
-<p>広島市東区・広島第一病院から徒歩6分</p>
-  <p>（詳細は、ご予約後にご案内します。）</p>
+<p><strong>
+女性限定・完全予約制</strong></p>
+<p>広島市東区・広島第一病院から徒歩6分
+</p>
+<p>（ご予約の方に、詳細はご案内します。）</p>
 <p>駐車場あり</p>
 
 <br>
 
-<p>♡セラピスト養成講座、無料相談受付中♡</p>
+<p>セラピスト養成講座、無料相談受付中</p>
 </div>
 </div>
 </section>
@@ -393,7 +474,7 @@ LINEで予約する
 </a>
 
 <p style="margin-top:20px;font-size:14px;">
-LINEでご予約の際は、<br>
+LINEでご予約の際は<br>
 お名前・ご連絡先・メニュー・ご希望日時を<br>
 お知らせください。
 </p>
@@ -401,14 +482,18 @@ LINEでご予約の際は、<br>
 </section>
 
 <script>
+function toggleMenu(){
+ document.getElementById('menu').classList.toggle('active');
+}
+
 const fadeEls = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver((entries)=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add('show');
-}
-});
+ entries.forEach(entry=>{
+  if(entry.isIntersecting){
+   entry.target.classList.add('show');
+  }
+ });
 });
 
 fadeEls.forEach(el=>observer.observe(el));
@@ -416,4 +501,4 @@ fadeEls.forEach(el=>observer.observe(el));
 
 </body>
 </html>
-```
+
