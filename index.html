@@ -1,1184 +1,387 @@
-<!DOCTYPE html>
 <html lang="ja" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <!-- SEO 対策: タイトル & ディスクリプション -->
-    <title>noa photo 広島 | 自然体PR撮影・出張撮影・おうちフォトスタジオ</title>
-    <meta name="description" content="広島で婚活・起業・プロフィールなら noa photo 広島。対話を通して自分らしさや魅力を言語化し、その魅力が伝わる自然体の写真を撮影します。SNS発信, プロフィール作成, 婚活など, あなたらしさを伝えたい方のためのプロデュースプランです。">
-    <meta name="keywords" content="noa photo, 広島, 魅力発掘プロデュース, 出張撮影, おうちフォトスタジオ, 自然体PR撮影, プロフィール写真, 婚活写真, 起業家 撮影, 数秘カラー, セラピー">
-   
-    <!-- OGP 設定 -->
-    <meta property="og:title" content="noa photo 広島 | 自然体PR撮影・出張撮影・おうちフォトスタジオ">
-    <meta property="og:description" content="対話を通して自分らしさや魅力を言語化し、その魅力が伝わる自然体の写真を撮影します。SNS発信、プロフィール作成、婚活など、あなたらしさを伝えたい方のためのプロデュースプランです。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://emuphotograph-max.github.io/PR/">
-    <meta property="og:site_name" content="noa photo 広島">
-   
-    <!-- Google 構造化データ (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "noa photo 広島",
-      "description": "広島を拠点とする自然体PR撮影、ロケーション出張撮影、おうちフォトスタジオでの撮影サービス。自己理解セッションと丁寧な対話で、あなたらしさと言葉と写真をトータルで引き出します。",
-      "url": "https://emuphotograph-max.github.io/PR/",
-      "telephone": "",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "広島市",
-        "addressRegion": "広島県",
-        "addressCountry": "JP"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 34.3963,
-        "longitude": 132.4594
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://lin.ee/zN3DGPVL"
-      ]
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>noa photo salon | 大人の女性が静かに休める場所</title>
+<meta name="description" content="女性の人生に寄り添うアロマケア。大人の女性が静かに休める広島のプライベートサロンです。">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+    /* 全体の基本設定（文字を大きく、ゆったりとした行間に） */
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #5c544d; /* 木の色・ダークブラウン */
+        background-color: #faf8f5; /* 生成り */
+        line-height: 2.2;
+        letter-spacing: 0.08em;
+        font-size: 16px;
     }
-    </script>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            light: '#FAF6F0',    // メイン背景：極上のアイボリー
-                            bg: '#F5EFE6',       // サブ背景：サンドベージュ
-                            sand: '#EAE1D4',     // パーツ背景：ダークベージュ
-                            accent: '#C5A880',   // アクセント：ノーブルゴールド
-                            rose: '#D9A599',     // ニュアンス：ダスティローズ
-                            dark: '#3E3835',     // テキスト：チャコールモカ
-                            olive: '#A9B2A1',    // ニュアンス：セージグリーン
-                        }
-                    },
-                    fontFamily: {
-                        serif: ['"Shippori Mincho"', 'serif'],
-                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
-                        playfair: ['"Playfair Display"', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome (Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    
-    <style>
-        /* フェードインアニメーションの定義 */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 1.2s ease;
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* ゆったりとした流れるようなグラデーション */
-        .bg-soft-grad {
-            background: linear-gradient(135deg, #FAF6F0 0%, #F5EFE6 50%, #FAF6F0 100%);
-        }
-        /* 写真のノイズ風テクスチャ(極小) */
-        .grain-bg {
-            background-image: radial-gradient(rgba(0,0,0,0.01) 1px, transparent 0);
-            background-size: 24px 24px;
-        }
-    </style>
+    /* PC表示時の文字サイズ拡大 */
+    @media (min-width: 768px) {
+        body { font-size: 18px; }
+    }
+
+    h1, h2, h3 {
+        font-family: 'Shippori Mincho', serif;
+        color: #4a423d; /* 少し濃い木の色 */
+        font-weight: 500;
+    }
+
+    /* カラーパレットのクラス化 */
+    .text-body { color: #7a7067; } /* グレージュ系テキスト */
+    .bg-ecru { background-color: #faf8f5; } /* 生成り */
+    .bg-white-card { background-color: #ffffff; } /* 白 */
+    .border-beige { border-color: #e8e3dc; } /* 淡いベージュ */
+    .text-wood { color: #6b5a4d; } /* 木の色 */
+    .text-greige { color: #8c8279; } /* 少しグレージュ */
+
+    /* 上質なLINEボタンのデザイン */
+    .btn-line {
+        background-color: #ffffff;
+        color: #5c544d;
+        border: 1px solid #e8e3dc;
+        box-shadow: 0 4px 15px rgba(92, 84, 77, 0.05);
+        transition: all 0.3s ease;
+    }
+    .btn-line:hover {
+        box-shadow: 0 6px 20px rgba(92, 84, 77, 0.1);
+        transform: translateY(-2px);
+    }
+
+    /* メニュー用のカードスタイル */
+    .menu-card {
+        background-color: #ffffff;
+        border: 1px solid #e8e3dc;
+        padding: 3.5rem 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    }
+
+    html { scroll-padding-top: 80px; }
+
+    /* セクション間の上品な区切り線 */
+    .section-divider {
+        width: 1px;
+        height: 50px;
+        background-color: #e8e3dc;
+        margin: 0 auto;
+    }
+
+    /* 見出しの両サイドのあしらい */
+    .heading-line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .heading-line::before, .heading-line::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #d4cec5;
+    }
+
+    /* 写真の角丸と柔らかな影 */
+    img {
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+    }
+</style>
 </head>
-<body class="bg-brand-light text-brand-dark font-sans selection:bg-brand-accent selection:text-white grain-bg overflow-x-hidden leading-relaxed">
+<body class="bg-[#faf8f5]">
 
-    <!-- Navigation Header -->
-    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-brand-light/90 backdrop-blur-md border-b border-brand-sand/30">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="font-serif text-lg md:text-xl tracking-widest text-brand-dark font-semibold">
-                noa photo <span class="text-xs font-sans tracking-normal font-normal text-brand-accent ml-1">広島</span>
+<!-- 固定ナビゲーションバー -->
+<nav class="fixed top-0 left-0 w-full h-16 bg-white/90 backdrop-blur-sm z-[9999] border-b border-beige flex items-center justify-center transition-all">
+    <div class="max-w-3xl w-full px-6 flex justify-between items-center text-[12px] md:text-[13px] font-medium tracking-widest text-wood">
+        <a href="#top" class="hover:text-greige transition">HOME</a>
+        <a href="#about" class="hover:text-greige transition">ABOUT</a>
+        <a href="#menu" class="hover:text-greige transition">MENU</a>
+        <a href="#salon" class="hover:text-greige transition">SALON</a>
+        <a href="#faq" class="hover:text-greige transition">FAQ</a>
+        <a href="#contact" class="hover:text-greige transition text-[#8c8279] border-b border-[#8c8279]">RESERVE</a>
+    </div>
+</nav>
+
+<!-- トップ（Hero） -->
+<header id="top" class="pt-36 pb-20 px-6 text-center">
+    <div class="max-w-2xl mx-auto space-y-12">
+        <p class="text-[14px] md:text-[16px] tracking-[0.2em] text-greige font-medium">頑張る女性が整うプライベートサロン</p>
+       
+        <h1 class="text-[22px] md:text-3xl leading-[2] md:leading-[1.9] tracking-[0.1em] md:tracking-widest text-wood">
+            〜自律神経と巡りを整える<br>アロマケア〜
+        </h1>
+       
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl shadow-sm">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1200" alt="柔らかい光の施術空間" class="w-full h-full object-cover">
+        </div>
+       
+        <div class="space-y-10 text-body">
+            <p>疲れが抜けない。<br>眠りが浅い。</p>
+            <p>なんとなく不調が続いている</p>
+            <p>そんな毎日が続いていませんか？<br></p>
+        </div>
+       
+        <div class="flex flex-col gap-5 max-w-sm mx-auto pt-8">
+            <a href="#contact" class="btn-line flex items-center justify-center py-5 rounded-full text-[15px] md:text-[16px] tracking-widest font-medium">
+                🤍 メールで相談する
             </a>
-            <nav class="hidden md:flex space-x-8 text-xs tracking-widest text-brand-dark/80">
-                <a href="#about" class="hover:text-brand-accent transition-colors duration-300">ABOUT</a>
-                <a href="#concept" class="hover:text-brand-accent transition-colors duration-300">CONCEPT</a>
-                <a href="#menu" class="hover:text-brand-accent transition-colors duration-300">MENU</a>
-                <a href="#steps" class="hover:text-brand-accent transition-colors duration-300">FLOW</a>
-                <a href="#profile" class="hover:text-brand-accent transition-colors duration-300">PROFILE</a>
-            </nav>
-            <div>
-                <a href="#contact" class="bg-brand-dark hover:bg-brand-accent text-white hover:text-brand-dark text-xs md:text-sm px-6 py-2.5 rounded-full tracking-widest transition-all duration-500 shadow-md">
-                    無料相談
-                </a>
-            </div>
+            <a href="#contact" class="btn-line flex items-center justify-center py-5 rounded-full text-[15px] md:text-[16px] tracking-widest font-medium">
+                🤍 自分を整える時間を予約する
+            </a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Hero Section (メインビジュアル) -->
-    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden bg-soft-grad">
-        <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-brand-sand/20 blur-3xl"></div>
-        <div class="absolute bottom-10 right-[-10%] w-[500px] h-[500px] rounded-full bg-brand-rose/10 blur-3xl"></div>
+<div class="section-divider"></div>
+
+<!-- いつも頑張っているあなたへ -->
+<section id="about" class="py-24 px-6 max-w-2xl mx-auto space-y-12 text-center">
+    <h2 class="text-2xl md:text-3xl heading-line text-wood">『自分のことは、<br>後回しになっていませんか？』</h2>
+   
+    <img src="https://images.unsplash.com/photo-1499914485622-a88fac536970?auto=format&fit=crop&q=80&w=1200" alt="リラックスした女性" class="w-full">
+   
+    <div class="space-y-10 text-body">
+        <p>女性は人生の節目ごとに、<br>身体も心も大きく変化していきます。</p>
+        <p>仕事、結婚、出産、子育て。</p>
+        <p>誰かを大切にする時間が増えるほど、<br>自分の疲れや小さな変化は<br>後回しになりやすいもの。</p>
+        <p class="text-wood pt-4">「疲れていることに慣れてしまった」<br>「休んでもスッキリしない」<br>「自分のための時間がない」</p>
+        <p>そんな方へ。</p>
+    </div>
+</section>
+
+<!-- 必要なのは、もっと頑張ることではなく -->
+<section class="py-24 px-6 bg-white border-y border-beige text-center">
+    <div class="max-w-2xl mx-auto space-y-14">
+        <div class="space-y-6">
+            <p class="text-xl md:text-2xl text-wood">必要なのは、もっと頑張ることではなく</p>
+            <h2 class="text-3xl md:text-4xl text-wood tracking-widest">ゆるめる時間</h2>
+        </div>
        
-        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-            <!-- テキストエリア -->
-            <div class="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1 text-center lg:text-left px-4 md:px-8">
-                <!-- サービス名強調デザイン -->
-                <div class="text-brand-accent tracking-[0.15em] font-serif mb-6 animate-pulse leading-loose">
-                    <span class="text-[11px] md:text-xs block lg:inline mb-1 lg:mb-0 opacity-80">noa photo 広島</span>
-                    <span class="text-xl md:text-2xl lg:text-3xl font-semibold text-brand-dark mx-2 px-4 py-1.5 bg-brand-sand/40 rounded-xl inline-block border border-brand-accent/30 shadow-sm">自然体PR撮影</span>
-                    <span class="text-[11px] md:text-xs block lg:inline mt-1 lg:mt-0 opacity-80">出張撮影・おうちフォトスタジオ</span>
-                </div>
-               
-                <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl text-brand-dark leading-tight md:leading-snug tracking-widest mb-6">
-                    写真を撮る前に、<br class="hidden md:inline">自分を知る。
-                </h1>
-                <div class="flex justify-center lg:justify-start space-x-6 mb-8 text-lg md:text-xl font-serif text-brand-dark/80 tracking-widest">
-                    <span>婚活も。</span>
-                    <span class="text-brand-accent">✦</span>
-                    <span>起業も。</span>
-                </div>
-               
-                <div class="space-y-5 text-sm md:text-base text-brand-dark/70 tracking-widest leading-loose max-w-lg mx-auto lg:mx-0 font-serif mb-10">
-                    <div class="border-l-2 border-brand-accent pl-4 text-left my-4">
-                        <p class="font-semibold text-brand-dark text-base md:text-lg leading-relaxed">
-                            対話を通して自分らしさや魅力を言語化し、その魅力が伝わる自然体の写真を撮影します。
-                        </p>
-                    </div>
-                    <p class="text-left text-xs md:text-sm text-brand-dark/80 leading-relaxed font-sans">
-                        SNS発信、プロフィール作成、婚活など、あなたらしさを伝えたい方のためのプランです。
-                    </p>
-                    <div class="border-t border-brand-sand/30 pt-4 mt-2 text-xs text-left text-brand-dark/60 space-y-2">
-                        <p>本当に必要なのは、まずは、自分自身を知ることかもしれません。</p>
-                        <p>自分の魅力を知り、自分を認め、自分を大切にする。その先に、自然体のあなたを必要としてくれる人との出会いがあります。</p>
-                    </div>
-                </div>
-               
-                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                    <a href="#contact" class="w-full sm:w-auto text-center bg-brand-accent hover:bg-brand-dark text-white text-sm px-10 py-4 rounded-full tracking-[0.2em] font-medium transition-all duration-500 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                        【無料相談はこちら】
-                    </a>
-                    <a href="#concept" class="w-full sm:w-auto text-center border border-brand-accent/50 hover:border-brand-accent text-brand-dark text-xs px-8 py-4 rounded-full tracking-[0.15em] transition-all duration-300">
-                        私たちの想いを見る <i class="fa-solid fa-arrow-down ml-2 text-brand-accent"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- ヒーロー画像エリア (スタイリッシュなアシンメトリー配置) -->
-            <!-- 差し替え済みトップ画像 & バッジ切れ防止コード -->
-            <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center items-center px-4">
-                <div class="relative w-full max-w-[340px] md:max-w-[380px] aspect-[3/4.5] bg-brand-dark rounded-2xl shadow-2xl">
-                    <!-- メインフレーム（縦長） - 角丸とあふれ防止を内側適用 -->
-                    <div class="absolute inset-0 rounded-2xl overflow-hidden border-[12px] border-white z-20 transform hover:scale-[1.02] transition-all duration-500">
-                        <img src="https://i.ibb.co/TDt5v5FJ/IMG-1796.png"
-                             alt="自然光の中のポートレート 広島の出張撮影"
-                             class="w-full h-full object-cover"
-                             onerror="this.src='https://placehold.co/800x1200/F5EFE6/3E3835?text=Natural+Portrait'">
-                    </div>
-                    <div class="absolute inset-0 border border-brand-accent/40 rounded-2xl translate-x-4 translate-y-4 z-10 pointer-events-none"></div>
-                    <!-- バッジが切り取られないよう、外側に配置し折り返し防止 -->
-                    <div class="absolute -bottom-4 -left-6 bg-brand-dark text-white px-5 py-3 rounded-xl z-30 shadow-lg font-serif text-xs tracking-widest whitespace-nowrap">
-                        <span class="block text-brand-accent font-playfair italic text-sm mb-0.5">be natural.</span>
-                        自然体のあなたらしさ
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Down Indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 text-brand-accent/80 text-[10px] tracking-[0.3em]">
-            <span class="uppercase">Scroll</span>
-            <div class="w-[1px] h-12 bg-gradient-to-b from-brand-accent to-transparent animate-bounce"></div>
-        </div>
-    </section>
-
-    <!-- Section 1: Problem (お悩み) -->
-    <section id="about" class="py-24 px-6 bg-white relative">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Check List</span>
-                <h2 class="font-serif text-2xl md:text-4xl text-brand-dark tracking-widest">
-                    こんなお悩みはありませんか？
-                </h2>
-                <div class="w-12 h-[1px] bg-brand-accent mx-auto mt-6"></div>
-            </div>
-
-            <!-- お悩みリストカード -->
-            <div class="bg-brand-light/50 border border-brand-sand/40 rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden reveal">
-                <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-brand-sand/10 pointer-events-none"></div>
-               
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                    <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white/80 hover:bg-white shadow-sm hover:shadow transition-all duration-300 border border-brand-sand/20">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-rose/20 text-brand-rose flex items-center justify-center text-sm">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <p class="text-brand-dark/90 text-sm md:text-base tracking-widest font-serif pt-0.5">写真を撮られるのが苦手</p>
-                    </div>
-                    <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white/80 hover:bg-white shadow-sm hover:shadow transition-all duration-300 border border-brand-sand/20">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-rose/20 text-brand-rose flex items-center justify-center text-sm">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <p class="text-brand-dark/90 text-sm md:text-base tracking-widest font-serif pt-0.5">カメラを向けられると顔が固まる</p>
-                    </div>
-                    <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white/80 hover:bg-white shadow-sm hover:shadow transition-all duration-300 border border-brand-sand/20">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-rose/20 text-brand-rose flex items-center justify-center text-sm">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <p class="text-brand-dark/90 text-sm md:text-base tracking-widest font-serif pt-0.5">自分の魅力や、どんな表情が良いかわからない</p>
-                    </div>
-                    <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white/80 hover:bg-white shadow-sm hover:shadow transition-all duration-300 border border-brand-sand/20">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-rose/20 text-brand-rose flex items-center justify-center text-sm">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <p class="text-brand-dark/90 text-sm md:text-base tracking-widest font-serif pt-0.5">キラキラした写真は苦手</p>
-                    </div>
-                    <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white/80 hover:bg-white shadow-sm hover:shadow transition-all duration-300 border border-brand-sand/20">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-rose/20 text-brand-rose flex items-center justify-center text-sm">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <p class="text-brand-dark/90 text-sm md:text-base tracking-widest font-serif pt-0.5">自分らしい写真が欲しい</p>
-                    </div>
-                    <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white/80 hover:bg-white shadow-sm hover:shadow transition-all duration-300 border border-brand-sand/20">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-rose/20 text-brand-rose flex items-center justify-center text-sm">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <p class="text-brand-dark/90 text-sm md:text-base tracking-widest font-serif pt-0.5">あなただからと、人で選ばれる写真が欲しい</p>
-                    </div>
-                </div>
-
-                <div class="mt-12 text-center border-t border-brand-sand/40 pt-10">
-                    <p class="text-brand-dark/90 font-serif leading-loose tracking-[0.15em] text-sm md:text-lg">
-                        あなたらしさを大切にしたPR撮影です。<br>
-                
-                        <span class="inline-block bg-brand-sand/30 px-3 py-1 font-semibold rounded-md border-b-2 border-brand-accent mt-2">
-                            
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Core Philosophy (自然体PR撮影で、大切なこと) -->
-    <!-- 【縦長写真枠 第1】: 透明度70% ＆ ホバーで100%になるインタラクティブな設定 -->
-    <section id="concept" class="py-24 px-6 bg-brand-light relative overflow-hidden">
-        <div class="absolute top-[40%] left-[-15%] w-[600px] h-[600px] rounded-full bg-brand-sand/30 blur-3xl"></div>
+        <img src="https://i.ibb.co/NnYhhjYc/IMG-2712.jpg=crop&q=80&w=1200" alt="アロマオイル" class="w-full">
        
-        <div class="max-w-6xl mx-auto relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-               
-                <!-- 【縦長写真枠 第1】 -->
-                <div class="lg:col-span-5 order-2 lg:order-1 flex justify-center reveal">
-                    <div class="relative w-full max-w-[320px] aspect-[3/5] bg-brand-dark rounded-lg">
-                        <!-- 上品なポラロイド調の縦長写真枠（透明度70% ＆ マウスホバーで100%） -->
-                        <div class="absolute inset-0 bg-white p-4 pb-12 rounded-lg shadow-xl border border-brand-sand/40 transform -rotate-2 hover:rotate-0 transition-all duration-500 z-20 opacity-70 hover:opacity-100">
-                            <div class="w-full h-[88%] overflow-hidden rounded-md bg-brand-light">
-                                <img src="https://i.ibb.co/5hkvHST6/IMG-1800.jpg"
-                                     alt="広島の豊かな自然を背景にした温かい自然体出張撮影"
-                                     class="w-full h-full object-cover filter brightness-[1.03] contrast-[0.98]"
-                                     onerror="this.src='https://placehold.co/800x1200/FAF6F0/3E3835?text=Warm+Nature'">
-                            </div>
-                            <div class="mt-4 text-center font-playfair italic text-xs tracking-widest text-brand-accent">
-                                Discover your light in Hiroshima
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-brand-olive/10 rounded-lg transform translate-x-4 translate-y-4 -rotate-1 pointer-events-none z-10 shadow-md"></div>
-                        <div class="absolute -bottom-8 right-4 flex space-x-2 z-30 bg-white p-2.5 rounded-full shadow-md border border-brand-sand/30">
-                            <span class="w-3.5 h-3.5 rounded-full bg-[#E8DCC4]" title="Cream Gold"></span>
-                            <span class="w-3.5 h-3.5 rounded-full bg-[#D4A396]" title="Rose Pink"></span>
-                            <span class="w-3.5 h-3.5 rounded-full bg-[#B3C5B5]" title="Sage Green"></span>
-                            <span class="w-3.5 h-3.5 rounded-full bg-[#8E7970]" title="Soft Cocoa"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- テキストエリア -->
-                <div class="lg:col-span-7 order-1 lg:order-2 reveal">
-                    <div class="mb-8">
-                        <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Our Mission</span>
-                        <h2 class="font-serif text-2xl md:text-3.5xl text-brand-dark leading-snug tracking-widest">
-                            自然体PR撮影の前に、大切なこと
-                        </h2>
-                        <div class="w-16 h-[1px] bg-brand-accent mt-4"></div>
-                    </div>
-
-                    <div class="space-y-6 text-brand-dark/80 text-sm md:text-base leading-loose tracking-widest font-serif">
-                        <p>
-                            私はこれまで10年以上、<br>
-                            エステ、アロマ、数秘＆カラー®、カラーセラピー、シータヒーリング、看護師、カウンセリングなどを通して、たくさんの女性の悩みに寄り添ってきた中で感じたことがあります。
-                        </p>
-                       
-                        <div class="bg-white/60 border-l-2 border-brand-accent p-6 rounded-r-2xl my-8">
-                            <p class="font-bold text-brand-dark text-base md:text-lg leading-relaxed mb-3">
-                                どんな人にも、その人らしい魅力があります。
-                            </p>
-                            <p>
-                                でも、自分の魅力に気づいている人は少ない。
-                            </p>
-                        </div>
-
-                        <p>
-                            そして、魅力に気づく前に必要なのは、<br>
-                            <span class="text-brand-dark font-semibold border-b border-brand-rose">自分を認めること。 自分を愛すること。 自分を満たすこと。</span>
-                        </p>
-                       
-                        <p class="pt-2 text-brand-accent font-semibold">
-                            だから私は、撮影の前に、まずあなた自身を知る時間を大切にしています。
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+        <div class="space-y-10 text-body">
+            <p>日々の緊張やストレスは、<br>気づかないうちに身体に残っていきます。</p>
+            <p>だからこそ、</p>
+            <p>身体全体の巡りと自律神経を整えることが大切です。</p>
+            <p><br>身体がほぐれると、心までもほぐれていき、<br>本来のあなたらしさが、よみがえります。</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section 3: Thoughts (大切にしていること) -->
-    <section class="py-24 px-6 bg-white relative">
-        <div class="max-w-4xl mx-auto text-center reveal">
-            <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Our Heart</span>
-            <h2 class="font-serif text-2xl md:text-4xl text-brand-dark tracking-widest mb-10 leading-snug">
-                自然体PR撮影で大切にしていること
-            </h2>
-            <div class="w-12 h-[1px] bg-brand-accent mx-auto mb-10"></div>
-           
-            <div class="space-y-8 font-serif tracking-[0.2em] leading-loose text-sm md:text-base text-brand-dark/80 max-w-2xl mx-auto">
-                <p class="text-base md:text-lg font-medium text-brand-dark">
-                    私が、撮りたいのは、<br>きれいな写真ではなく、<br>会いたたくなる人柄
-                </p>
-                <p>
-                    売り込まなくても伝わる魅力<br>
-                
-                </p>
-                <p>
-                    写真を残すためだけでなく、<br>
-                   
-                </p>
-                <p class="pt-4 text-brand-accent font-semibold text-base md:text-lg">
-                     あなたらしさを伝えるために、<br>あると思っています。
-                </p>
-            </div>
-           
-            <!-- 言葉と写真で見える化 -->
-            <div class="mt-16 bg-brand-light border border-brand-sand/50 rounded-3xl p-8 md:p-12 relative overflow-hidden">
-                <div class="absolute -bottom-10 -left-10 w-36 h-36 rounded-full bg-brand-rose/5"></div>
-                <div class="relative z-10">
-                    <p class="font-serif text-lg md:text-2xl text-brand-dark tracking-widest mb-4">
-                        言葉と写真で、あなたらしさを見える化する。
-                    </p>
-                    <p class="font-serif text-brand-accent tracking-[0.3em] text-sm md:text-base font-bold">
-                        自然体PR撮影。
-                    </p>
-                    <div class="mt-8">
-                        <a href="#contact" class="inline-block bg-brand-dark hover:bg-brand-accent text-white hover:text-brand-dark px-10 py-4 rounded-full tracking-[0.2em] text-sm font-medium transition-all duration-500 shadow-md transform hover:-translate-y-0.5">
-                            【無料相談はこちら】
-                        </a>
-                    </div>
-                </div>
-            </div>
+<!-- noaが大切にしていること -->
+<section class="py-24 px-6 max-w-2xl mx-auto space-y-12 text-center">
+    <h2 class="text-2xl md:text-3xl heading-line text-wood">noaが大切にしていること</h2>
+   
+    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=1200" alt="施術中の手元" class="w-full">
+   
+    <div class="space-y-10 text-body">
+        <p>今日のお身体や心の状態、<br>お悩みを丁寧にお伺いします。</p>
+        <p>世界最高品質のっ精油の心地よい香りと、<br>手の温もりが伝わる、<br>リンパトリートメント。</p>
+        <p>五感を通して、<br>心と身体がゆるむ時間を大切にしています。</p>
+        <p>心身の緊張を緩め、<br>本来のあなたが持っている巡る力<br>（自然治癒力）を<br>高めていきます。</p>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- 元産婦人科看護師だからこそできる寄り添い -->
+<section class="py-20 px-6 max-w-2xl mx-auto text-center">
+    <div class="bg-white-card p-12 md:p-16 rounded-2xl shadow-sm border border-beige space-y-12">
+        <h2 class="text-2xl md:text-3xl text-wood leading-loose">元産婦人科看護師だからこそ<br>できる寄り添い</h2>
+        <div class="space-y-8 text-body">
+            <p>女性の身体は、<br>同じ人でも毎日違います。</p>
+            <p>不調や不安を抱える女性に寄り添ってきた<br>経験から、</p>
+            <p>安心して力を抜ける場所を<br>つくっています。</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section 6: Menu & Price (メニュー：自然体PR撮影に一本化) -->
-    <!-- 想いのすぐ後ろに配置し、購買のストーリーを最適化しました。背景はbg-brand-lightのサンドベージュに。 -->
-    <section id="menu" class="py-24 px-6 bg-brand-light border-y border-brand-sand/40 relative">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Service Menu</span>
-                <h2 class="font-serif text-2xl md:text-4xl text-brand-dark tracking-widest">
-                    プラン・料金
-                </h2>
-                <div class="w-12 h-[1px] bg-brand-accent mx-auto mt-6"></div>
-            </div>
+<div class="section-divider"></div>
 
-            <!-- 1プラン統合プレミアムオファーカード -->
-            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-brand-sand/30 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 relative overflow-hidden reveal max-w-3xl mx-auto">
-                <!-- 上部の限定バッジ -->
-                <div class="absolute top-0 left-0 w-full bg-gradient-to-r from-brand-accent to-brand-rose text-white text-center py-2 text-xs md:text-sm tracking-[0.2em] font-serif font-bold z-10">
-                    ✦ 2026年6月末まで限定モニター募集 ✦
-                </div>
-               
-                <div class="pt-6">
-                    <div class="text-center mb-8">
-                        <span class="text-xs text-brand-accent font-serif tracking-[0.2em] uppercase block mb-2">SPECIAL PRODUCING PLAN</span>
-                        <h3 class="font-serif text-2xl md:text-3xl text-brand-dark tracking-widest font-bold">自然体RP撮影</h3>
-                        <div class="w-16 h-[1px] bg-brand-accent/50 mx-auto mt-4"></div>
-                    </div>
-                   
-                    <div class="text-center space-y-4 max-w-xl mx-auto mb-10">
-                        <p class="font-serif text-brand-dark font-medium text-sm md:text-base leading-relaxed tracking-widest">
-                            対話を通して、あなたらしさや魅力を整理し、<br class="hidden sm:inline">
-                            その魅力が自然に伝わる写真を撮影します。
-                        </p>
-                        <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif bg-brand-light/75 p-5 rounded-2xl border border-brand-sand/20">
-                            写真を撮るだけではなく、「自分ってこんな魅力があったんだ」そんな発見につながる時間を大切にしています。
-                        </p>
-                    </div>
-
-                    <!-- Plan Contents -->
-                    <div class="bg-brand-light/40 border border-brand-sand/30 rounded-2xl p-6 md:p-8 mb-10 max-w-lg mx-auto">
-                        <span class="text-xs text-brand-dark/60 tracking-widest font-serif block uppercase mb-4 text-center font-bold">【プラン内容】</span>
-                        <ul class="space-y-4 font-serif text-sm md:text-base text-brand-dark/90 tracking-widest pl-2">
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-leaf text-brand-accent text-xs mt-1.5 mr-3 flex-shrink-0"></i>
-                                <span>事前ヒアリング</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-leaf text-brand-accent text-xs mt-1.5 mr-3 flex-shrink-0"></i>
-                                <span>魅力発掘カウンセリング（LINE通話または、対面）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-leaf text-brand-accent text-xs mt-1.5 mr-3 flex-shrink-0"></i>
-                                <span>自然体PR撮影（出張または、おうちフォトスタジオ）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-leaf text-brand-accent text-xs mt-1.5 mr-3 flex-shrink-0"></i>
-                                <span>写真データ納品</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- モニター条件アピール -->
-                    <div class="text-center max-w-md mx-auto py-3 px-4 bg-brand-rose/10 rounded-xl border border-brand-rose/20 mb-10">
-                        <p class="text-brand-dark/90 font-serif text-xs md:text-sm tracking-wider leading-relaxed font-semibold">
-                            ※お写真の掲載・ご感想記入にご協力いただける方を募集しています。
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Price and Button -->
-                <div class="border-t border-brand-sand/40 pt-8 mt-4 max-w-lg mx-auto w-full">
-                    <div class="text-center mb-8">
-                        <span class="text-xs text-brand-dark/50 tracking-widest font-serif block mb-1">MONITOR PRICE</span>
-                        <div class="flex items-center justify-center space-x-4">
-                            <!-- 通常価格打ち消し -->
-                            <div class="text-brand-dark/40 font-serif line-through text-sm md:text-base">
-                                通常 50,000円
-                            </div>
-                            <div class="text-brand-accent text-xl">➔</div>
-                            <!-- モニター価格 -->
-                            <div class="text-brand-dark">
-                                <span class="text-sm font-bold text-brand-rose bg-brand-rose/10 px-2 py-0.5 rounded mr-1">限定価格</span>
-                                <span class="text-3xl md:text-4xl font-serif tracking-wider font-bold text-brand-rose">20,000</span>
-                                <span class="text-xs font-serif font-bold"> 円（税込）</span>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="space-y-4">
-                        <a href="#contact" class="block w-full text-center bg-brand-dark hover:bg-brand-accent text-white hover:text-brand-dark py-4 rounded-xl tracking-widest text-sm md:text-base font-bold transition-all duration-300 shadow-lg transform hover:-translate-y-0.5">
-                            モニタープランを予約・相談する
-                        </a>
-                        <p class="text-center text-[11px] text-brand-dark/50 font-serif tracking-widest">
-                            2026年6月末まで募集 ✦ 枠に限りがありますのでお早めに
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4: Workflow (撮影の流れ) -->
-    <!-- プランの後ろに来るため、背景をbg-whiteにして全体のカラーの交互バランスを整えました -->
-    <section id="steps" class="py-24 px-6 bg-white relative">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Process / Flow</span>
-                <h2 class="font-serif text-2xl md:text-4xl text-brand-dark tracking-widest">
-                    自然体PR撮影の流れ
-                </h2>
-                <p class="text-xs text-brand-dark/60 mt-2 font-serif tracking-widest">目的別に最適化された、2つのアプローチ</p>
-                <div class="w-12 h-[1px] bg-brand-accent mx-auto mt-6"></div>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-               
-                <!-- 1. 婚活女性向けのフロー -->
-                <div class="reveal">
-                    <div class="text-center lg:text-left mb-8">
-                        <span class="text-xs text-brand-rose font-serif tracking-[0.2em] uppercase block mb-1">FOR MARRIAGE SUITORS</span>
-                        <h3 class="font-serif text-xl md:text-2xl text-brand-dark tracking-widest font-semibold pb-3 border-b border-brand-rose/30 inline-block w-full text-center lg:text-left">
-                            婚活女性向けの流れ
-                        </h3>
-                    </div>
-                   
-                    <div class="space-y-6">
-                        <!-- Step 1 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-rose/10 text-brand-rose font-serif text-sm font-bold">
-                                    01
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">婚活女性①事前ヒアリング</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        理想のパートナーや、あなたらしい魅力を一緒に整理します。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Step 2 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-rose/10 text-brand-rose font-serif text-sm font-bold">
-                                    02
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">②魅力発見トーク</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        お話ししながら、自分では気づいていない魅力を見つけていきます。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-rose/10 text-brand-rose font-serif text-sm font-bold">
-                                    03
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">③撮影</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        自然な表情や雰囲気が伝わるよう、リラックスした空間で撮影します。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Step 4 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-rose/10 text-brand-rose font-serif text-sm font-bold">
-                                    04
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">④写真選び</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        あなたらしさが伝わる一枚を一緒に選んでいきます。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. 起業女性・発信のフロー -->
-                <div class="reveal mt-12 lg:mt-0">
-                    <div class="text-center lg:text-left mb-8">
-                        <span class="text-xs text-brand-olive font-serif tracking-[0.2em] uppercase block mb-1">FOR BUSINESS & BRANDING</span>
-                        <h3 class="font-serif text-xl md:text-2xl text-brand-dark tracking-widest font-semibold pb-3 border-b border-brand-olive/40 inline-block w-full text-center lg:text-left">
-                            起業女性・発信向けの流れ
-                        </h3>
-                    </div>
-
-                    <div class="space-y-6">
-                        <!-- Step 1 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-olive/15 text-brand-olive font-serif text-sm font-bold">
-                                    01
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">起業女性・発信①事業ヒアリング</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        どんな想いで活動しているのか、届けたい相手についてお聞きします。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Step 2 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-olive/15 text-brand-olive font-serif text-sm font-bold">
-                                    02
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">②強み・想い整理</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        あなたらしさや選ばれる理由を一緒に言葉にしていきます。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-olive/15 text-brand-olive font-serif text-sm font-bold">
-                                    03
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">③撮影</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        人柄や世界観が伝わる写真を撮影します。お客様の事務所やサロンへの出張も、心地いい癒しの中で行います。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Step 4 -->
-                        <div class="bg-brand-light/60 rounded-2xl p-6 shadow-sm border border-brand-sand/30 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-                            <div class="flex items-start gap-4">
-                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-brand-olive/15 text-brand-olive font-serif text-sm font-bold">
-                                    04
-                                </span>
-                                <div>
-                                    <h4 class="font-serif text-base md:text-lg text-brand-dark tracking-widest font-semibold mb-2">④発信アドバイス</h4>
-                                    <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed tracking-wider font-serif">
-                                        写真をどう活用するか、発信の方向性も一緒に整理します。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 5: Future (この撮影の先にある未来) -->
-    <!-- 背景を交互のリズムのために bg-brand-light にアップデート -->
-    <section class="py-24 px-6 bg-brand-light relative">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Vision</span>
-                <h2 class="font-serif text-2xl md:text-4xl text-brand-dark tracking-widest">
-                    この撮影の先にある未来
-                </h2>
-                <div class="w-12 h-[1px] bg-brand-accent mx-auto mt-6"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch reveal">
-               
-                <!-- 婚活女性の未来 -->
-                <div class="bg-white hover:bg-brand-light/30 border border-brand-sand/40 rounded-3xl p-8 md:p-12 transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-md relative group">
-                    <div class="absolute top-4 right-6 font-playfair italic text-5xl text-brand-sand/20 group-hover:text-brand-accent/20 transition-colors duration-300">01</div>
-                    <div>
-                        <h3 class="font-serif text-xl md:text-2xl text-brand-dark tracking-widest mb-6 pb-4 border-b border-brand-sand">
-                            婚活女性なら
-                        </h3>
-                        <div class="space-y-4 font-serif text-brand-dark/80 tracking-widest leading-loose">
-                            <p class="text-lg md:text-xl text-brand-accent font-semibold leading-relaxed">
-                                「写真に苦手意識がある方でも、<br class="hidden sm:inline">あなたらしい魅力が伝わる<br class="hidden sm:inline">プロフィール写真へ」
-                            </p>
-                        </div>
-                    </div>
-                    <p class="mt-8 text-xs text-brand-dark/60 font-serif tracking-widest">
-                        他人の理想を演じるのをやめ、自然体のあなたのまま惹かれ合う幸せな出会いを引き寄せます。
-                    </p>
-                </div>
-
-                <!-- 起業女性の未来 -->
-                <div class="bg-white hover:bg-brand-light/30 border border-brand-sand/40 rounded-3xl p-8 md:p-12 transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-md relative group">
-                    <div class="absolute top-4 right-6 font-playfair italic text-5xl text-brand-sand/20 group-hover:text-brand-accent/20 transition-colors duration-300">02</div>
-                    <div>
-                        <h3 class="font-serif text-xl md:text-2xl text-brand-dark tracking-widest mb-6 pb-4 border-b border-brand-sand">
-                            起業、発信撮影なら
-                        </h3>
-                        <div class="space-y-4 font-serif text-brand-dark/80 tracking-widest leading-loose">
-                            <p class="text-lg md:text-xl text-brand-accent font-semibold leading-relaxed">
-                                「人柄や想いが伝わることで、<br class="hidden sm:inline">信頼から選ばれる発信へ。」
-                            </p>
-                        </div>
-                    </div>
-                    <p class="mt-8 text-xs text-brand-dark/60 font-serif tracking-widest">
-                        言葉を無理に盛ることなく、あなたの人間性と世界観に共感するファンが集まる土台を作ります。
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- 共通の結び -->
-            <div class="mt-16 text-center max-w-2xl mx-auto reveal">
-                <p class="font-serif text-base md:text-xl text-brand-dark/90 leading-loose tracking-[0.15em]">
-                    本来のあなたらしさを見つけ、伝わる写真へ
-                </p>
-                <p class="mt-6 text-sm text-brand-dark/70 font-serif tracking-widest">
-                    私は、その最初の一歩をお手伝いしたいと思っています。
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 7: Customer Voices (お客様の声) -->
-    <section class="py-24 px-6 bg-white relative">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Voices</span>
-                <h2 class="font-serif text-2xl md:text-4xl text-brand-dark tracking-widest">
-                    お客様の声
-                </h2>
-                <p class="text-xs text-brand-dark/50 mt-2 font-serif tracking-wider">（実際のお客様の声を掲載）</p>
-                <div class="w-12 h-[1px] bg-brand-accent mx-auto mt-6"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
-                <!-- ボイス 1 -->
-                <div class="bg-brand-light p-8 rounded-2xl border border-brand-sand/30 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-brand-accent space-x-1 mb-4 text-xs">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <h4 class="font-serif text-brand-dark font-bold text-base tracking-widest mb-4">
-                            「本当の自分に会えた気分です！」
-                        </h4>
-                        <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed font-serif tracking-wider">
-                            ただ綺麗に撮るだけではなく、事前に丁寧に話を聞いてくださり、数秘のセッションもあって納得。おうちフォトスタジオ撮影を選びましたが、とてもアットホームでリラックスした笑顔を引き出していただきました。
-                        </p>
-                    </div>
-                    <div class="mt-6 border-t border-brand-sand/30 pt-4 flex justify-between items-center">
-                        <span class="text-xs text-brand-dark/60 font-serif">広島市・起業家女性</span>
-                        <span class="text-[10px] text-brand-accent tracking-widest">30代</span>
-                    </div>
-                </div>
-
-                <!-- ボイス 2 -->
-                <div class="bg-brand-light p-8 rounded-2xl border border-brand-sand/30 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-brand-accent space-x-1 mb-4 text-xs">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <h4 class="font-serif text-brand-dark font-bold text-base tracking-widest mb-4">
-                            「無理して笑わなくていい、に救われました」
-                        </h4>
-                        <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed font-serif tracking-wider">
-                            ロケーション出張撮影を依頼しました。カメラを向けられると緊張して引き攣ってしまうのが悩みでしたが、akemiさんが優しく寄り添ってくださり、広島の美しい陽の光のなかで、無理せず自然な表情を引き出していただけて大満足です。
-                        </p>
-                    </div>
-                    <div class="mt-6 border-t border-brand-sand/30 pt-4 flex justify-between items-center">
-                        <span class="text-xs text-brand-dark/60 font-serif">広島市・婚活女性</span>
-                        <span class="text-[10px] text-brand-accent tracking-widest">40代</span>
-                    </div>
-                </div>
-
-                <!-- ボイス 3 -->
-                <div class="bg-brand-light p-8 rounded-2xl border border-brand-sand/30 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-brand-accent space-x-1 mb-4 text-xs">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <h4 class="font-serif text-brand-dark font-bold text-base tracking-widest mb-4">
-                            「自分の価値を認められるように」
-                        </h4>
-                        <p class="text-brand-dark/70 text-xs md:text-sm leading-relaxed font-serif tracking-wider">
-                            これまで人とばかり比べて自分に自信がありませんでした。akemiさんのカウンセリングを通じて、すでに私には魅力があったんだと腑に落ちました。おうちスタジオの穏やかな空気感も本当に心地よかったです。
-                        </p>
-                    </div>
-                    <div class="mt-6 border-t border-brand-sand/30 pt-4 flex justify-between items-center">
-                        <span class="text-xs text-brand-dark/60 font-serif">廿日市市・サロンオーナー</span>
-                        <span class="text-[10px] text-brand-accent tracking-widest">30代</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 8: Profile with 2nd VERTICAL IMAGE FRAME (自己紹介差し替え版) -->
-    <!-- 【縦長写真枠 第2】: 透明度70% ＆ ホバーで100%になるインタラクティブな設定 -->
-    <section id="profile" class="py-24 px-6 bg-brand-light relative overflow-hidden border-t border-brand-sand/30">
-        <div class="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-brand-rose/5 blur-3xl"></div>
+<!-- アロマケアメニュー -->
+<section id="menu" class="py-24 px-6 max-w-2xl mx-auto space-y-20">
+    <div class="text-center space-y-14">
+        <h2 class="text-2xl md:text-3xl heading-line text-wood">アロマケアメニュー</h2>
        
-        <div class="max-w-6xl mx-auto relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-               
-                <!-- テキストエリア -->
-                <div class="lg:col-span-7 reveal">
-                    <div class="mb-8">
-                        <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Photographer</span>
-                        <h2 class="font-serif text-3xl text-brand-dark tracking-widest">
-                            Profile
-                        </h2>
-                        <span class="font-serif text-xs text-brand-accent tracking-[0.2em] uppercase block mt-1.5 font-bold">
-                            対話と写真で魅力を引き出す
-                        </span>
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 mt-2">
-                            <span class="font-serif text-2xl text-brand-dark/95 tracking-[0.15em] font-semibold">
-                                Akemi
-                            </span>
-                            <span class="text-xs text-brand-dark/75 font-serif tracking-wider mt-1 sm:mt-0 font-medium">
-                                魅力発掘プロデューサー / カメラマン
-                            </span>
-                        </div>
-                        <div class="w-16 h-[1px] bg-brand-accent mt-4 mb-6"></div>
-                       
-                        <div class="flex flex-wrap gap-2 mb-6 text-xs font-serif tracking-wider text-brand-dark/70">
-                            <span class="bg-white/80 border border-brand-sand px-3 py-1.5 rounded-full">元産婦人科看護師</span>
-                            <span class="bg-white/80 border border-brand-sand px-3 py-1.5 rounded-full">3児のママ</span>
-                            <span class="bg-white/80 border border-brand-sand px-3 py-1.5 rounded-full">撮影実績800組以上</span>
-                            <span class="bg-white/80 border border-brand-sand px-3 py-1.5 rounded-full">カウンセリング歴10年以上</span>
-                        </div>
-                    </div>
-
-                    <!-- 差し替え済み自己紹介文章 -->
-                    <div class="space-y-6 text-brand-dark/80 text-sm md:text-base leading-loose tracking-widest font-serif">
-                        <p class="font-bold text-brand-dark border-b border-brand-sand/45 pb-4 text-base">
-                            私は、ただ写真を撮るだけのカメラマンではありません。
-                        </p>
-                       
-                        <p>
-                            これまで看護師として多くの方と関わり、さらにカラーセラピーや心理学を学びながら、たくさんの女性の悩みや想いに耳を傾けてきました。
-                        </p>
-
-                        <div class="bg-white/50 border-l-2 border-brand-accent p-6 rounded-r-2xl my-6">
-                            <p class="text-brand-dark font-medium leading-relaxed">
-                                「自分の魅力を、自分自身が一番わかっていないことがある」
-                            </p>
-                            <p class="text-xs text-brand-dark/60 mt-2">
-                                その中で、強く感じたことです。
-                            </p>
-                        </div>
-
-                        <div class="space-y-2 py-2 text-brand-dark/75">
-                            <p class="flex items-center"><i class="fa-solid fa-minus text-brand-accent/60 mr-3 text-xs"></i> SNS発信が苦手。</p>
-                            <p class="flex items-center"><i class="fa-solid fa-minus text-brand-accent/60 mr-3 text-xs"></i> プロフィールが書けない。</p>
-                            <p class="flex items-center"><i class="fa-solid fa-minus text-brand-accent/60 mr-3 text-xs"></i> 婚活で自分の良さをうまく伝えられない。</p>
-                        </div>
-
-                        <p>
-                            そんな悩みを抱える方は少なくありません。<br>
-                            Level of confidence, それは魅力がないからではなく、自分らしさがまだ言葉になっていないだけかもしれません。
-                        </p>
-
-                        <p class="pt-2 text-brand-accent font-semibold">
-                            だから私は、撮影の前に対話の時間を大切にしています。
-                        </p>
-
-                        <div class="bg-brand-sand/20 rounded-2xl p-6 border border-brand-sand/40 grid grid-cols-2 gap-4 text-xs md:text-sm">
-                            <p class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent mr-2.5"></span>好きなこと</p>
-                            <p class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent mr-2.5"></span>大切にしていること</p>
-                            <p class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent mr-2.5"></span>これまで歩んできた人生</p>
-                            <p class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent mr-2.5"></span>周りの人から言われること</p>
-                        </div>
-
-                        <p>
-                            一つひとつお話を伺いながら、その人らしさや魅力を一緒に整理していきます。
-                        </p>
-
-                        <div class="text-center py-4 my-4 border-y border-brand-sand/30">
-                            <p class="text-lg md:text-xl text-brand-rose font-medium tracking-[0.15em]">
-                                「こんな自分もいいかもしれない」
-                            </p>
-                            <p class="text-xs text-brand-dark/60 mt-2">そう思える瞬間を、写真として残したいと思っています。</p>
-                        </div>
-
-                       
-                    
-                        <p>
-                            自分らしい魅力を見つけ、言葉にし、伝わる写真にすること。<br>
-                            その先に、発信や仕事、婚活など、それぞれの新しい一歩があると考えています。
-                        </p>
-
-                        <p class="font-medium text-brand-accent text-base md:text-lg pt-4">
-                            あなたらしい魅力を、一緒に見つけてみませんか。
-                        </p>
-
-                        <p class="text-xs md:text-sm text-brand-dark/70 italic border-l-2 border-brand-rose/60 pl-4 mt-6">
-                            対話と写真を通して、あなたらしい未来への一歩を応援します。
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 【縦長写真枠 第2】: プロフィール横（akemiさんのイメージポートレート）(不透明度70% & ホバーで100%に) -->
-                <div class="lg:col-span-5 flex justify-center reveal lg:sticky lg:top-24 mt-8 lg:mt-0">
-                    <div class="relative w-full max-w-[320px] aspect-[3/4.8] bg-brand-dark rounded-2xl">
-                        <!-- 上品な額縁調の縦長フレーム -->
-                        <div class="absolute inset-0 bg-white p-5 rounded-2xl shadow-xl border border-brand-sand/50 transform rotate-1 hover:rotate-0 transition-all duration-500 z-20 opacity-70 hover:opacity-100">
-                            <!-- ゴールドの極細内枠 -->
-                            <div class="w-full h-full border border-brand-accent/30 rounded-lg overflow-hidden relative p-1.5 bg-brand-light">
-                                <img src="https://i.ibb.co/YnYPzLm/IMG-0578.jpg"
-                                     alt="穏やかに微笑む女性フォトグラファー akemi"
-                                     class="w-full h-full object-cover filter brightness-[1.01]"
-                                     onerror="this.src='https://placehold.co/800x1200/FAF6F0/3E3835?text=akemi'">
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-brand-rose/20 rounded-2xl transform -translate-x-3 translate-y-3 pointer-events-none z-10 shadow-md"></div>
-                        <div class="absolute -top-4 -right-4 bg-brand-accent text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-30">
-                            <i class="fa-solid fa-camera text-sm"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 9: Contact (無料相談への案内 & 予約シミュレーター) -->
-    <section id="contact" class="py-24 px-6 bg-white relative">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-2">Reservation</span>
-                <h2 class="font-serif text-2xl md:text-4xl text-brand-dark tracking-widest">
-                    まずは無料相談へ
-                </h2>
-                <div class="w-12 h-[1px] bg-brand-accent mx-auto mt-6"></div>
-            </div>
-
-            <div class="bg-brand-light border border-brand-sand rounded-3xl p-8 md:p-12 shadow-sm reveal">
-                <div class="max-w-2xl mx-auto text-center mb-10">
-                    <p class="font-serif text-brand-dark text-base md:text-lg tracking-widest leading-relaxed mb-6 font-semibold">
-                        いきなり申し込むのは不安。<br class="md:hidden">そんな方のために。
-                    </p>
-                    <p class="font-serif text-brand-dark/75 text-sm leading-loose tracking-widest mb-6">
-                        30分の無料相談をご用意しています。<br>
-                        今のお悩みや、理想の未来をお聞かせください。<br>
-                        出張撮影への不安や、おうちフォトスタジオの雰囲気などもお気軽にどうぞ。<br>
-                        無理なご案内はいたしません。安心してご相談ください。
-                    </p>
-                    <!-- LINEの公式リンクを紐づけてボタン化 -->
-                    <a href="https://lin.ee/zN3DGPVL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-white bg-[#06C755] hover:bg-[#05b04b] px-6 py-3 rounded-full shadow-md transition-all duration-300 hover:scale-[1.03]">
-                        <i class="fa-brands fa-line text-xl"></i>
-                        <span class="font-serif text-xs tracking-widest font-semibold">公式LINEで気軽に相談する</span>
-                    </a>
-                </div>
-
-                <!-- フォーム送信先をnoa.photo.kimono@gmail.comへ -->
-                <form id="freeConsultationForm" onsubmit="handleFormSubmit(event)" class="space-y-6 max-w-lg mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-brand-sand/30">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_subject" value="【noa photo 広島】無料相談フォームからのお問い合わせ">
-
-                    <div>
-                        <label class="block text-xs text-brand-dark/70 tracking-widest font-serif mb-2" for="name">お名前 <span class="text-brand-rose">*</span></label>
-                        <input type="text" id="name" name="お名前" required class="w-full bg-brand-light border border-brand-sand/50 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-accent text-brand-dark transition-all" placeholder="例）山田 花子">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-brand-dark/70 tracking-widest font-serif mb-2" for="email">メールアドレス <span class="text-brand-rose">*</span></label>
-                        <input type="email" id="email" name="メールアドレス" required class="w-full bg-brand-light border border-brand-sand/50 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-accent text-brand-dark transition-all" placeholder="example@email.com">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-brand-dark/70 tracking-widest font-serif mb-2" for="interest">ご検討内容 <span class="text-brand-rose">*</span></label>
-                        <select id="interest" name="ご相談内容" required class="w-full bg-brand-light border border-brand-sand/50 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-accent text-brand-dark transition-all font-serif">
-                            <option value="">選択してください</option>
-                            <option value="モニタープラン（自然体PR撮影）希望">モニタープラン（自然体PR撮影）希望</option>
-                            <option value="まずは自分を知りたい（無料相談）">まずは自分を知りたい（無料相談）</option>
-                            <option value="その他ご質問">その他ご質問</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs text-brand-dark/70 tracking-widest font-serif mb-2" for="message">今感じているお悩み (任意)</label>
-                        <textarea id="message" name="メッセージ" rows="4" class="w-full bg-brand-light border border-brand-sand/50 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-accent text-brand-dark transition-all font-serif" placeholder="お気軽に現在のご状況や、出張撮影・おうちフォトスタジオなどに関するご質問をお書きください"></textarea>
-                    </div>
-
-                    <button type="submit" id="submitButton" class="w-full bg-brand-accent hover:bg-brand-dark text-white hover:text-white py-4 rounded-xl tracking-[0.2em] text-sm font-semibold transition-all duration-500 shadow-md hover:shadow-lg flex items-center justify-center space-x-2">
-                        <span id="submitButtonText">【無料相談を予約する】</span>
-                        <i id="submitButtonIcon" class="fa-solid fa-paper-plane text-xs"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 10: Closing Words (最後に) -->
-    <section class="py-24 px-6 bg-soft-grad relative overflow-hidden border-t border-brand-sand/40">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-brand-sand/15 blur-3xl pointer-events-none"></div>
+        <img src="https://i.ibb.co/dwcJ06ND/IMG-2721.jpg=format&fit=crop&q=80&w=1200" alt="施術ベッド" class="w-full">
        
-        <div class="max-w-3xl mx-auto text-center relative z-10 reveal">
-            <span class="text-brand-accent font-playfair tracking-[0.3em] text-xs uppercase block mb-4">Closing</span>
-            <h2 class="font-serif text-2xl md:text-3.5xl text-brand-dark leading-snug tracking-widest mb-10">
-                最後に
-            </h2>
-            <div class="w-12 h-[1px] bg-brand-accent mx-auto mb-12"></div>
-           
-            <div class="space-y-6 font-serif tracking-[0.2em] leading-loose text-sm md:text-base text-brand-dark/85 mb-16">
-                <p>あなたの魅力は、<br>まだ言葉になっていないだけ。</p>
-                <p>あなたの価値は、<br>まだ自分で気づいていないだけ。</p>
-                <p class="pt-4">
-                    婚活も。<br>
-                    起業も。<br>
-                    人生も。
-                </p>
-                <p class="text-brand-accent font-bold text-lg md:text-xl">
-                    まずは自分を知ることから。
-                </p>
-                <p class="pt-4">
-                    広島での優しく温かな出張撮影とおうちフォトスタジオを通じて、<br>
-                    言葉と写真で、あなたらしい未来を描くお手伝いをします。
-                </p>
-            </div>
+        <div class="space-y-8 text-body">
+            <p>doTERRAエッセンシャルオイルを使用。</p>
+            <p>香りと温かさに包まれながら、<br>今のあなたに必要なケアを。</p>
+        </div>
+    </div>
 
-            <div class="flex flex-col items-center space-y-4">
-                <a href="#contact" class="inline-block bg-brand-dark hover:bg-brand-accent text-white hover:text-brand-dark px-16 py-5 rounded-full tracking-[0.2em] text-sm md:text-base font-semibold transition-all duration-500 shadow-xl transform hover:-translate-y-1">
-                    【無料相談はこちら】
-                </a>
-                <span class="text-[10px] text-brand-dark/50 tracking-widest font-serif">いつでも優しくお待ちしています</span>
-            </div>
+    <div class="menu-card space-y-10 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#faf8f5] via-[#e8e3dc] to-[#faf8f5]"></div>
+        <h3 class="text-xl md:text-2xl tracking-widest text-wood font-medium">🤍 整えるアロマケア<br><span class="text-[16px] md:text-[18px] text-greige mt-3 block font-normal">（60分）</span></h3>
+        <div class="text-2xl md:text-3xl text-wood font-serif">6,000円</div>
+        <div class="space-y-8 text-body">
+            <p>日々の緊張をゆるめ、<br>心と身体をニュートラルな状態へ<br>戻していくケア。</p>
+            <p class="text-wood">「最近少し疲れている」<br>「身体の力を抜きたい」</p>
+            <p>そんな方へ。</p>
         </div>
-    </section>
+        <div class="bg-ecru p-8 rounded-xl text-left max-w-sm mx-auto border border-beige/50">
+            <p class="text-[14px] md:text-[15px] text-greige font-medium mb-5 text-center tracking-widest">【内容】</p>
+            <p class="text-body leading-[2.5] text-center">
+                ・背面<br>
+                ・表面<br>
+                ・デコルテ<br>
+                ・腕<br>
+                ・ヘッド
+            </p>
+        </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-brand-dark text-brand-light/90 py-12 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center border-b border-brand-sand/20 pb-8 mb-8">
-            <div class="text-center md:text-left mb-6 md:mb-0">
-                <h3 class="font-serif text-xl tracking-widest text-white mb-2">noa photo 広島</h3>
-                <p class="text-xs text-brand-light/60 tracking-wider font-serif">自然体PR撮影 / 出張撮影 / おうちフォトスタジオ / 自己理解カウンセリング</p>
-            </div>
-            <div class="flex space-x-6 text-sm tracking-widest text-brand-light/80">
-                <a href="#about" class="hover:text-brand-accent transition-colors">ABOUT</a>
-                <a href="#concept" class="hover:text-brand-accent transition-colors">CONCEPT</a>
-                <a href="#steps" class="hover:text-brand-accent transition-colors">FLOW</a>
-                <a href="#menu" class="hover:text-brand-accent transition-colors">MENU</a>
-                <a href="#contact" class="hover:text-brand-accent transition-colors">CONTACT</a>
-            </div>
+    <div class="menu-card space-y-10 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#faf8f5] via-[#e8e3dc] to-[#faf8f5]"></div>
+        <h3 class="text-xl md:text-2xl tracking-widest text-wood font-medium">🤍 深巡アロマケア<br><span class="text-[16px] md:text-[18px] text-greige mt-3 block font-normal">（90分）</span></h3>
+        <div class="text-2xl md:text-3xl text-wood font-serif">10,000円</div>
+        <div class="space-y-8 text-body">
+            <p>自分のことを後回しにしてきた女性へ。</p>
+            <p>ただ疲れを取るだけではなく、</p>
+            <p>香りとホットストーンの温かさに包まれながら、<br>頑固な冷えや肩こり、疲労感<br>滞った巡りを整えていきます。<br>深い休息へ導くリトリートケア。</p>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-[11px] text-brand-light/40 font-serif tracking-widest">
-            <p>&copy; 2026 noa photo 広島. All rights reserved.</p>
-            <p class="mt-2 sm:mt-0">Designed with serenity & SEO Optimized</p>
+        <div class="bg-ecru p-8 rounded-xl text-left max-w-sm mx-auto border border-beige/50">
+            <p class="text-[14px] md:text-[15px] text-greige font-medium mb-5 text-center tracking-widest">【内容】</p>
+            <p class="text-body leading-[2.5] text-center">
+                ・背面<br>
+                ・表面<br>
+                ・デコルテ<br>
+                ・腕<br>
+                ・ヘッド<br>
+                ・ホットストーン
+               
+            </p>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- 常時表示される追従型LINE相談ボタン (Floating LINE Button) -->
-    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-2 pointer-events-none">
-        <div class="bg-white text-brand-dark text-[10px] md:text-xs font-serif px-3 py-1.5 rounded-lg shadow-xl border border-brand-sand/60 tracking-wider animate-bounce pointer-events-auto">
-            お気軽にLINEでご相談ください ✦
+<!-- ホットストーンについて -->
+<section class="py-24 px-6 bg-white border-y border-beige text-center">
+    <div class="max-w-2xl mx-auto space-y-14">
+        <h2 class="text-2xl md:text-3xl heading-line text-wood">ホットストーンについて</h2>
+       
+       
+
+
+
+       
+        <div class="space-y-10 text-body">
+            <p>ホットストーンとは、<br>火山岩（玄武岩）を温めた天然石を使用するケアです。</p>
+            <p>身体を温かさで包み込み、<br>香りとともに深いリラックス時間へ。</p>
         </div>
-        <a href="https://lin.ee/zN3DGPVL" target="_blank" rel="noopener noreferrer" class="pointer-events-auto flex items-center justify-center space-x-2 bg-[#06C755] hover:bg-[#05b04b] text-white px-5 py-3.5 rounded-full shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 group font-sans text-xs md:text-sm font-bold tracking-widest">
-            <i class="fa-brands fa-line text-2xl group-hover:rotate-12 transition-transform duration-300"></i>
-            <span>LINEで無料相談</span>
+    </div>
+</section>
+
+<!-- 施術後に感じる変化 -->
+<section class="py-24 px-6 max-w-2xl mx-auto space-y-14 text-center">
+    <h2 class="text-2xl md:text-3xl heading-line text-wood">施術後に感じる変化</h2>
+   
+    <img src="https://i.ibb.co/hRnq4dBV/IMG-2715.jpg"=format&fit=crop&q=80&w=1200" alt="施術後の変化" class="w-full">
+   
+    <div class="space-y-10 text-body bg-white-card p-12 border border-beige rounded-2xl">
+        <p class="leading-[2.8] text-wood">
+            ・呼吸が深くなり、胸のつかえが軽くなる<br>
+・頭の中の考え事が静かになる<br>
+・肩や首の力が自然と抜ける<br>
+・夜ぐっすり眠れたと感じる方も<br>
+・イライラや不安が和らぐ<br>
+・身体だけでなく心も軽くなる<br>
+・「また頑張れそう」と前向きな気持ちになれる<br>
+            
+        </p>
+        <div class="pt-8 border-t border-beige mt-8">
+            <p>忙しい毎日の中で忘れていた、<br>「自分に戻る感覚」を。</p>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- サロンについて -->
+<section id="salon" class="py-24 px-6 max-w-2xl mx-auto space-y-12 text-center">
+    <h2 class="text-2xl md:text-3xl heading-line text-wood">サロンについて</h2>
+   
+    <div class="space-y-6 text-body bg-ecru p-12 rounded-2xl border border-beige/50">
+        <p>広島市東区、広島第一病院近く<br><span class="text-[14px] text-greige">※詳細はご予約後にご案内します。</span></p>
+       
+        <div class="w-12 h-[1px] bg-[#e8e3dc] mx-auto my-6"></div>
+       
+        <p>月曜日・火曜日限定</p>
+        <p>11：00〜 / 13:00〜</p>
+        <p class="pt-4">完全予約制 / 女性限定</p>
+        <p>赤ちゃん見守り施術OK</p>
+    </div>
+   
+    <div class="max-w-sm mx-auto pt-6">
+        <a href="#contact" class="btn-line flex items-center justify-center py-5 rounded-full text-[15px] md:text-[16px] tracking-widest font-medium">
+            🤍 メールで予約する
         </a>
     </div>
+</section>
 
-    <!-- 上品なモーダルポップアップ (Form送信成功時) -->
-    <div id="successModal" class="fixed inset-0 bg-brand-dark/45 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl p-8 max-w-md w-full text-center shadow-2xl border border-brand-sand/50 transform translate-y-4 transition-all duration-500">
-            <div class="w-16 h-16 bg-brand-olive/20 text-brand-olive rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
-                <i class="fa-solid fa-heart-circle-check"></i>
-            </div>
-            <h3 class="font-serif text-xl text-brand-dark tracking-widest mb-4 font-bold">無料相談のご予約を承りました</h3>
-            <p class="text-brand-dark/70 text-sm leading-loose tracking-wider font-serif mb-8">
-                ご入力いただきありがとうございます。3営業日以内に、記載いただいたメールアドレスへスケジュールのご案内を差し上げます。
-            </p>
-            <button onclick="closeModal()" class="w-full bg-brand-dark hover:bg-brand-accent text-white hover:text-brand-dark py-3.5 rounded-xl text-xs tracking-widest font-semibold transition-all duration-300">
-                閉じる
-            </button>
+<div class="section-divider"></div>
+
+<!-- よくあるご質問 -->
+<section id="faq" class="py-24 px-6 max-w-2xl mx-auto space-y-14">
+    <h2 class="text-2xl md:text-3xl text-center heading-line text-wood">よくあるご質問</h2>
+   
+    <div class="space-y-8">
+        <div class="bg-white p-10 border border-beige rounded-2xl space-y-5 shadow-sm">
+            <h3 class="font-medium text-wood text-[17px] md:text-[19px]">Q. 完全予約制ですか？</h3>
+            <p class="text-body">はい。<br>プライベートサロンのため、<br>完全予約制となっております。</p>
+        </div>
+       
+        <div class="bg-white p-10 border border-beige rounded-2xl space-y-5 shadow-sm">
+            <h3 class="font-medium text-wood text-[17px] md:text-[19px]">Q. 持ち物は必要ですか？</h3>
+            <p class="text-body">特に必要ありません。<br>紙ショーツをご用意しております。<br>お化粧直しをされる方はご持参ください。</p>
+        </div>
+       
+        <div class="bg-white p-10 border border-beige rounded-2xl space-y-5 shadow-sm">
+            <h3 class="font-medium text-wood text-[17px] md:text-[19px]">Q. カード払いはできますか？</h3>
+            <p class="text-body">はい、ご利用いただけます。</p>
+        </div>
+       
+        <div class="bg-white p-10 border border-beige rounded-2xl space-y-5 shadow-sm">
+            <h3 class="font-medium text-wood text-[17px] md:text-[19px]">Q. 2人で一緒に来店できますか？</h3>
+            <p class="text-body">同時施術はできませんが、<br>サロン内でお待ちいただくことは可能です。</p>
+        </div>
+       
+        <div class="bg-white p-10 border border-beige rounded-2xl space-y-5 shadow-sm">
+            <h3 class="font-medium text-wood text-[17px] md:text-[19px]">Q. 着替え時間はコース時間に含まれますか？</h3>
+            <p class="text-body">含まれません。<br>カウンセリングやお着替えのお時間は<br>ゆっくりお取りしています。</p>
+        </div>
+       
+        <div class="bg-white p-10 border border-beige rounded-2xl space-y-5 shadow-sm">
+            <h3 class="font-medium text-wood text-[17px] md:text-[19px]">Q. 子どもと一緒でも大丈夫ですか？</h3>
+            <p class="text-body">はい。<br>完全プライベート空間のため、<br>お子さまと一緒でも安心してお過ごしいただけます。</p>
         </div>
     </div>
+</section>
 
-    <!-- JavaScript 処理部 -->
-    <script>
-        // 1. スクロール時のヘッダー背景切り替え
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-lg', 'bg-white');
-                header.classList.remove('bg-brand-light/90');
-            } else {
-                header.classList.remove('shadow-lg', 'bg-white');
-                header.classList.add('bg-brand-light/90');
-            }
-        });
+<!-- ご予約・お問い合わせフォーム -->
+<section id="contact" class="py-24 px-6 max-w-2xl mx-auto space-y-12 bg-ecru/30">
+    <h2 class="text-2xl md:text-3xl text-center heading-line text-wood">ご予約・お問い合わせ</h2>
+   
+    <div class="bg-white p-8 md:p-12 border border-beige rounded-2xl shadow-sm space-y-8">
+        <p class="text-center text-body text-[15px] md:text-[16px] leading-[2]">
+            誰かのために頑張る時間も大切。<br>
+            でも、まずは自分が満たされることも大切です。<br>
+            少しだけ力を抜いて、<br>心と身体を整える時間をつくってみませんか？
+        </p>
 
-        // 2. フェードイン表示（Intersection Observer）
-        const revealElements = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
-        });
-
-        revealElements.forEach(element => {
-            observer.observe(element);
-        });
-
-        // 3. フォーム送信処理 (noa.photo.kimono@gmail.com への紐付け)
-        function handleFormSubmit(e) {
-            e.preventDefault();
+        <p class="text-center text-body text-[14px] md:text-[15px]">
+            ご予約・ご相談は下記のフォームよりお送りください。<br>
+            内容を確認後、折り返しご連絡いたします。
+        </p>
+        
+        <form action="mailto:noaphotosalon@gmail.com" method="post" enctype="text/plain" class="space-y-8 text-left">
            
-            const submitButton = document.getElementById('submitButton');
-            const submitText = document.getElementById('submitButtonText');
-            const submitIcon = document.getElementById('submitButtonIcon');
-           
-            submitButton.disabled = true;
-            submitButton.classList.add('opacity-75', 'cursor-not-allowed');
-            submitText.innerText = "送信中...";
-            submitIcon.className = "fa-solid fa-circle-notch animate-spin text-xs";
-           
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const interest = document.getElementById('interest').value;
-            const message = document.getElementById('message').value;
+            <div class="space-y-3">
+                <label class="block text-wood font-medium text-[15px]">お名前 <span class="text-red-400 text-sm">*</span></label>
+                <input type="text" name="お名前" required class=
+...
 
-            // FormSubmit.co の非同期エンドポイントを利用してメールを送信
-            fetch("https://formsubmit.co/ajax/noa.photo.kimono@gmail.com", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify({
-                    "お名前": name,
-                    "メールアドレス": email,
-                    "ご相談内容": interest,
-                    "メッセージ・お悩み": message
-                })
-            })
-            .then(response => {
-                if (response.ok) {
-                    const modal = document.getElementById('successModal');
-                    modal.classList.remove('hidden');
-                    modal.classList.add('flex');
-                    document.getElementById('freeConsultationForm').reset();
-                } else {
-                    alert("送信に失敗しました。時間をおいて再度お試しいただくか、公式LINEよりお問い合わせください。");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("通信エラーが発生しました。お手数ですが、公式LINEより直接お問い合わせください。");
-            })
-            .finally(() => {
-                submitButton.disabled = false;
-                submitButton.classList.remove('opacity-75', 'cursor-not-allowed');
-                submitText.innerText = "【無料相談を予約する】";
-                submitIcon.className = "fa-solid fa-paper-plane text-xs";
-            });
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('successModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-    </script>
-</body>
-</html>
+[メッセージの一部が表示されています]  メッセージ全体を表示
